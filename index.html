@@ -4,7 +4,7 @@
     <!-- include title, meta description, and the meta author. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Course Home Page</title>
+    <title>A Course Home Page - Joseph Peralta</title>
     <meta name="author" content="Joseph D. Peralta">
     <meta name="description" content="A Course Home Page for WDD231 Web Frontend Development">
 
@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Javascript -->
     <script defer src="scripts/script.js"></script>
@@ -22,9 +22,9 @@
     <!-- Header -->
     <header class="header">
         <!-- Need to be responsive -->
-        <a id="menu" href="#"></a>
+        <a id="menu" href="#" aria-label="Toggle Navigation" aria-expanded="false"></a>
         <div class="hero">
-            <img src="images/profile-photo.webp" alt="Joseph D. Peralta" height="100" class="shadow">
+            <img src="images/profile-photo.webp" srcset="images/profile-photo.webp" alt="Joseph D. Peralta" width="100" height="100" class="shadow">
             <h1 class="kodchasan-bold">Joseph D. Peralta</h1>
         </div>
         <nav class="navigation">
@@ -47,7 +47,7 @@
             <section class="box margin-bottom-1 section-two">
                 <h2 class="section-header">Bulacan, Philippines</h2>
                 <div class="my-place-photo">
-                    <img src="images/maramo-river.webp" alt="Maramo River Philippines" width="350">
+                    <img src="images/maramo-river.webp" alt="Maramo River Philippines" srcset="images/maramo-river-350w.webp" width="350" height="263">
                 </div>
                 <p>Maramo River</p>
             </section>
@@ -67,7 +67,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; <span id="currentyear"></span> Joseph D. Peralta | <img src="images/philippines-flag.webp" alt="Philippines Flag" width="20"> Philippines</p>
+        <p>&copy; <span id="currentyear"></span> Joseph D. Peralta | <img src="images/philippines-flag.webp" alt="Philippines Flag" width="20" height="15"> Philippines</p>
         <p id="footer-lastmodified-paragraph">Last Update: <span id="lastModified"></span></p>
     </footer>
 </body>
