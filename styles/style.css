@@ -369,4 +369,16 @@ section h2 {
     #menu.show::before {
         content: "✖";
     }
+
+    nav.navigation {
+        padding: 0;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .navigation a:hover {
+        display: block;
+    }
 }
