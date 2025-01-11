@@ -228,3 +228,37 @@ section h2 {
     transition: 0.5s;
     text-decoration: underline;
 }
+
+/* Phone responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .section-one {
+        order: 2;
+    }
+
+    .section-two {
+        order: 1;
+    }
+
+    .section-three {
+        order: 3;
+    }
+
+    .my-place-photo img{
+        height: auto;
+        max-width: 279px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        font-size: small;
+        gap: .5rem;
+    }
+}
