@@ -287,6 +287,7 @@ section h2 {
 
     .container {
         flex-direction: column;
+        gap: 0;
     }
     
     .section-one {
@@ -340,5 +341,32 @@ section h2 {
         font-size: 1rem;
         white-space: nowrap;
         cursor: pointer;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    /* My hamburger menu */
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: var(--primary-color);
+        color: var(--primary-color-contrast);
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: "✖";
     }
 }

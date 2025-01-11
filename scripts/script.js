@@ -131,3 +131,12 @@ course_completed_style.innerHTML = `
     }
 `;
 document.head.appendChild(course_completed_style);
+
+// My hamburger
+const hamburger = document.querySelector('#menu');
+const nav = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    hamburger.classList.toggle('show');
+});
