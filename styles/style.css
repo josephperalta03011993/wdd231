@@ -4,6 +4,7 @@
     --background-color: #FFFFFD;
     --background-color-contrast: #000;
     --button-color: #64301D;
+    --button-color-contrast: #E6EDEF;
 }
 
 /* Font family */
@@ -229,27 +230,54 @@ section h2 {
     text-decoration: underline;
 }
 
-/* Phone responsiveness */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
+#courses-list {
+    line-height: 0;
+    text-align: left;
+}
+
+.button-certificate {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    background-color: var(--background-color-contrast);
+    color: var(--primary-color-contrast);
+    padding: .5rem 3rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+#certificate-list {
+    margin: 0;
+    padding: 1rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#certificate-list li {
+    background-color: var(--button-color-contrast);
+    color: var(--background-color-contrast);
+    padding: .5rem 3rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Adjust base font size */
     }
 
-    .section-one {
-        order: 2;
-    }
-
-    .section-two {
-        order: 1;
-    }
-
-    .section-three {
-        order: 3;
-    }
-
-    .my-place-photo img{
-        height: auto;
-        max-width: 279px;
+    .hero {
+        padding: 1rem;
+        flex-direction: column; 
+        align-items: center;
     }
 
     .navigation ul {
@@ -257,8 +285,15 @@ section h2 {
         gap: 1rem;
     }
 
-    .hero {
-        font-size: small;
-        gap: .5rem;
+    .container {
+        flex-direction: column;
+    }
+
+    .section-one, .section-two, .section-three {
+        width: 100%; /* Full width on mobile */
+    }
+
+    #certificate-list {
+        grid-template-columns: 1fr; /* Single column on mobile */
     }
 }

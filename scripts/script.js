@@ -70,7 +70,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -87,3 +87,47 @@ const courses = [
         completed: false
     }
 ]
+
+const course_list = document.querySelector('#courses-list');
+const certificate_list = document.querySelector('#certificate-list');
+let list_html = '';
+let list_certificate = '';
+
+// loop through the courses array and display the course information
+courses.forEach(course => {  
+    list_html += `
+        <li>
+            <p>${course.subject} ${course.number} - ${course.title}</p>
+        </li>
+    `;
+});
+course_list.innerHTML = list_html;
+
+// loop through the courses array and display the certificate information
+courses.forEach(course => {
+    const list_item_class = course.completed ? 'completed' : '';
+    
+        list_certificate += `
+            <li class="${list_item_class}">
+                <strong>${course.subject} ${course.number}</strong>
+            </li>`;
+    
+});
+certificate_list.innerHTML = list_certificate;
+
+// to style my completed button
+const course_completed_style = document.createElement('style');
+course_completed_style.innerHTML = `
+    #certificate-list li { /* Basic list styles */
+        list-style: none;
+        padding: 5px;
+        margin: 5px 0;
+        border: 1px solid black;
+    }
+
+    #certificate-list li.completed { /* Styles for completed courses ONLY */
+        background-color: #64301D;
+        color: #FFF;
+    }
+`;
+document.head.appendChild(course_completed_style);
