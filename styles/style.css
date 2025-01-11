@@ -157,7 +157,7 @@ li {
     margin: 0;
     display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
-    gap: 10rem; /* Set spacing between items */
+    gap: 5rem; /* Set spacing between items */
 }
 
 .container {
@@ -167,11 +167,27 @@ li {
 
 .section-one {
     flex:2;
+    text-align: center;
 }
 
 .section-two {
     flex:1;
+    align-items: center;
+    text-align: center;
 }
+
+.section-three {
+    align-items: center;
+    text-align: center;
+}
+
+.my-place-photo {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}   
 
 .section-header {
     background-color: var(--primary-color);
@@ -180,7 +196,7 @@ li {
 }
 
 section h2 {
-    margin-top: 0;
+    margin: 0;
     border-radius: .5rem .5rem 0 0;
 }
 
