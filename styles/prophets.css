@@ -1,6 +1,16 @@
 :root {
     --primary-color: #B9B9CC;
-    --font-color: #4D4D96;
+    --font-color: #2a2abb;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 .grid {
@@ -32,15 +42,12 @@ h1, h2 {
 }
 
 p {
-    margin: .3rem;
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+    margin: .1rem;
+    font-size: 14px;
 }
 
 img {
+    border: 1px solid var(--white);
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
     margin-top: .5rem;
 }
@@ -51,4 +58,34 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     color: var(--font-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    gap: .2rem;
+}
+
+button {
+    width: 150px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--font-color);
+    border: 1px solid rgba(47,47,177,1);
+}
+
+.active {
+    background-color: var(--white);
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
 }
