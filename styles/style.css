@@ -268,7 +268,7 @@ section h2 {
     .hero {
         font-size: small;
         gap: .5rem;
-    
+        align-items: center;
     }
     
     #certificate-list {
@@ -329,5 +329,15 @@ section h2 {
 
     .navigation a:hover {
         display: block;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 44px auto;
+    }
+    
+    header img {
+        width: 50px;
+        height: 50px;
     }
 }
