@@ -27,6 +27,7 @@ const displayProphets = (prophets) => {
         let numofchildren = document.createElement('p');
         let yearsProphet = document.createElement('p');
         let death = document.createElement('p');
+        let age = document.createElement('p');
 
         // Build h2 show prophet fullname
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
@@ -34,7 +35,14 @@ const displayProphets = (prophets) => {
         birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
         numofchildren.textContent = `Number of Children: ${prophet.numofchildren}`;
         yearsProphet.textContent = `Prophet Years: ${prophet.length}`;
-        death.textContent = `Death: ${prophet.death}`;
+        if(prophet.death === null)
+        {
+            death.textContent = "Death: Alive";
+        } else {
+            death.textContent = `Death: ${prophet.death}`;
+        }
+        let ageAfterDeath = getAgeAfterDeath(prophet.birthdate, prophet.death);
+        age.textContent = `Age: ${ageAfterDeath}`;
 
         // Build img portrait set attributes
         portrait.setAttribute('src', prophet.imageurl);
@@ -50,6 +58,7 @@ const displayProphets = (prophets) => {
         card.appendChild(numofchildren);
         card.appendChild(yearsProphet);
         card.appendChild(death);
+        card.appendChild(age);
         card.appendChild(portrait);
 
         cards.appendChild(card);
@@ -70,10 +79,22 @@ const childl = document.querySelector("#childl");
 const old = document.querySelector("#old");
 
 async function jsonFetch(url) {
-    console.log("JSON Fetch Function");
     const response = await fetch(url);
     const data = await response.json();
     return data.prophets;
+}
+
+function getAgeAfterDeath(birthdate, deathdate) {
+    let birth = new Date(birthdate);
+    let death = new Date(deathdate);
+
+    if(deathdate === null) {
+        death = new Date();
+    }
+
+    age = Math.floor((death - birth) / (365 * 24 * 60 * 60 * 1000));
+
+    return age;
 }
 
 const getProphets = async (filter = "all") => 
@@ -95,6 +116,9 @@ const getProphets = async (filter = "all") =>
                 break;
             case "childl":
                 prophets = prophets.filter((prophet) => prophet.numofchildren >= 10);
+                break;
+            case "old":
+                prophets = prophets.filter((prophet) => getAgeAfterDeath(prophet.birthdate, prophet.death) >= 95);
                 break;
         }
 
@@ -141,4 +165,10 @@ childl.addEventListener('click', () => {
     clearButtonClaases();
     getProphets("childl");
     childl.classList.add("active");
+});
+
+old.addEventListener('click', () => {
+    clearButtonClaases();
+    getProphets("old");
+    old.classList.add("active");
 });
