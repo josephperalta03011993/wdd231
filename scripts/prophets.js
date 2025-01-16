@@ -90,6 +90,12 @@ const getProphets = async (filter = "all") =>
             case "fifteenPlus":
                 prophets = prophets.filter((prophet) => prophet.length >= 15);
                 break;
+            case "childs":
+                prophets = prophets.filter((prophet) => prophet.numofchildren < 5);
+                break;
+            case "childl":
+                prophets = prophets.filter((prophet) => prophet.numofchildren >= 10);
+                break;
         }
 
         displayProphets(prophets);
@@ -123,4 +129,16 @@ fifteenPlus.addEventListener('click', () => {
     clearButtonClaases();
     getProphets("fifteenPlus");
     fifteenPlus.classList.add("active");
+});
+
+childs.addEventListener('click', () => {
+    clearButtonClaases();
+    getProphets("childs");
+    childs.classList.add("active");
+});
+
+childl.addEventListener('click', () => {
+    clearButtonClaases();
+    getProphets("childl");
+    childl.classList.add("active");
 });
