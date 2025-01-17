@@ -108,6 +108,10 @@ section {
     overflow: hidden;
 }
 
+section h2 {
+    margin-top: 0;
+}
+
 section p {
     font-weight: 600;
     font-size: smaller;

@@ -59,7 +59,7 @@ const displayMembers = (members) => {
         logo.setAttribute('alt', `Company logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '177');
-        logo.setAttribute('height', '87');
+        logo.setAttribute('height', '112');
 
         // Append the section(card) with the created elements
         card.appendChild(logo);
