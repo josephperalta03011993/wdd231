@@ -26,8 +26,15 @@
         justify-content: flex-end;
     }
 
+    .navigation ul li a {
+        font-size: 1rem;
+    }
+
     .navigation a:hover {
         background-color: rgba(255, 255, 255, 0.2);
     }
 
+    nav.navigation {
+        grid-column: 3 / 4;
+    }
 }

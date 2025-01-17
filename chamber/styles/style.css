@@ -28,6 +28,10 @@ nav {
     background-color: var(--primary-color);
 }
 
+nav.navigation {
+    grid-column: 1 / -1;
+}
+
 #hamburger {
     font-size: 2rem;
     border: none;
@@ -62,6 +66,7 @@ ul.menu-links li a {
 /* active menu item */
 li.current-menu-item a {
     background-color: rgba(0, 0, 0, 0.2); /* black 20% */
+    font-weight: 700;
 }
 
 .navigation {
