@@ -7,131 +7,89 @@ hamburger.addEventListener('click', () => {
 });
 
 /* Members directory */
-const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+const url = "https://josephperalta03011993.github.io/wdd231/chamber/data/members.json";
 const cards = document.querySelector("#cards");
 
-async function getProphetData() {
+async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
     
     // for testing the data response
     // console.table(data);
 
-    // this function expects an array that is why we will use data.prophets instead of just data
-    displayProphets(data.prophets);
+    // this function expects an array that is why we will use data.members instead of just data
+    displayMembers(data.members);
 }
 
-const displayProphets = (prophets) => {
+const displayMembers = (members) => {
     // build cards
     const cards = document.querySelector("div#cards");
     cards.innerHTML = "";
 
-    prophets.forEach(prophet => {
+    members.forEach(member => {
         // Create elements to add to the div.cards element
         let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let portrait = document.createElement('img');
-        let birthdate = document.createElement('p');
-        let birthplace = document.createElement('p');
-        let numofchildren = document.createElement('p');
-        let yearsProphet = document.createElement('p');
-        let death = document.createElement('p');
-        let age = document.createElement('p');
+        let logo = document.createElement('img');
+        let companyName = document.createElement('h2');
+        let address = document.createElement('p');
+        let contact = document.createElement('p');
+        let website = document.createElement('a');
 
-        // Build h2 show prophet fullname
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
-        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
-        numofchildren.textContent = `Number of Children: ${prophet.numofchildren}`;
-        yearsProphet.textContent = `Prophet Years: ${prophet.length}`;
-        if(prophet.death === null)
-        {
-            death.textContent = "Death: Alive";
-        } else {
-            death.textContent = `Death: ${prophet.death}`;
-        }
-        let ageAfterDeath = getAgeAfterDeath(prophet.birthdate, prophet.death);
-        age.textContent = `Age: ${ageAfterDeath}`;
+        // Build h2 show member fullname
+        companyName.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        contact.textContent = `${member.phone_number}`;
+        website.textContent = `${member.website}`;
+
+        // website attribute
+        website.setAttribute('href', `${member.website}`)
 
         // Build img portrait set attributes
-        logo.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order} Latter-day President`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '160');
-        portrait.setAttribute('height', 'auto');
+        logo.setAttribute('src', member.image);
+        logo.setAttribute('alt', `Company logo of ${member.name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '200');
+        logo.setAttribute('height', '70');
 
         // Append the section(card) with the created elements
         card.appendChild(logo);
-        card.appendChild(fullName);
-        card.appendChild(birthdate);
-        card.appendChild(birthplace);
-        card.appendChild(numofchildren);
-        card.appendChild(yearsProphet);
-        card.appendChild(death);
-        card.appendChild(age);
-
+        card.appendChild(companyName);
+        card.appendChild(address);
+        card.appendChild(contact);
+        card.appendChild(website);
+        
         cards.appendChild(card);
     });
 }
 
-getProphetData();
+getMembersData();
 
 // Button filters
 
 // button elements
-const all = document.querySelector("#all");
-const idaho = document.querySelector("#idaho");
-const nonus = document.querySelector("#nonus");
-const fifteenPlus = document.querySelector("#ten");
-const childs = document.querySelector("#childs");
-const childl = document.querySelector("#childl");
-const old = document.querySelector("#old");
+const grid = document.querySelector("#grid");
+const list = document.querySelector("#list");
 
 async function jsonFetch(url) {
     const response = await fetch(url);
     const data = await response.json();
-    return data.prophets;
+    return data.members;
 }
 
-function getAgeAfterDeath(birthdate, deathdate) {
-    let birth = new Date(birthdate);
-    let death = new Date(deathdate);
-
-    if(deathdate === null) {
-        death = new Date();
-    }
-
-    age = Math.floor((death - birth) / (365 * 24 * 60 * 60 * 1000));
-
-    return age;
-}
-
-const getProphets = async (filter = "all") => 
+const getMembers = async (filter = "all") => 
     {
-        let prophets = await jsonFetch(url);
+        let members = await jsonFetch(url);
 
         switch(filter) {
-            case "idaho":
-                prophets = prophets.filter((prophet) => prophet.birthplace === "Idaho");
+            case "grid":
+                alert("GRID");
                 break;
-            case "nonus":
-                prophets = prophets.filter((prophet) => prophet.birthplace === "England");
-                break;
-            case "fifteenPlus":
-                prophets = prophets.filter((prophet) => prophet.length >= 15);
-                break;
-            case "childs":
-                prophets = prophets.filter((prophet) => prophet.numofchildren < 5);
-                break;
-            case "childl":
-                prophets = prophets.filter((prophet) => prophet.numofchildren >= 10);
-                break;
-            case "old":
-                prophets = prophets.filter((prophet) => getAgeAfterDeath(prophet.birthdate, prophet.death) >= 95);
+            case "list":
+                alert("LIST");
                 break;
         }
 
-        displayProphets(prophets);
+        displayMembers(members);
     }
 
 // button event listeners
@@ -140,16 +98,16 @@ function clearButtonClaases() {
     filteredButtons.forEach(button => button.className = "");
 }
 
-all.addEventListener('click', () => {
+grid.addEventListener('click', () => {
     clearButtonClaases();
-    getProphets("all");
-    all.classList.add("active");
+    getMembers("grid");
+    grid.classList.add("active");
 });
 
-idaho.addEventListener('click', () => {
+list.addEventListener('click', () => {
     clearButtonClaases();
-    getProphets("idaho");
-    idaho.classList.add("active")
+    getMembers("list");
+    list.classList.add("active")
 });
 
 /* End of Members directory script */

@@ -91,16 +91,26 @@ main {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: .3rem;
+    gap: 1rem;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color);
-    color: var(--primary-color-contrast);
-    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--primary-color-contrast);
+    color: var(--background-color-contrast);
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+}
+
+section:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: .3s ease-in;
+    box-sizing: 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
 p {
