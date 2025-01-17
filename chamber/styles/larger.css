@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #164E70;
+    --primary-color-contrast: #FFF;
+    --background-color: #FFFFFD;
+    --background-color-contrast: #000;
+    --button-color: #64301D;
+    --button-color-contrast: #E6EDEF;
+}
+
 @media only screen and (min-width: 38rem) {
     
     header {
@@ -40,5 +49,9 @@
 
     main {
         padding: 0 5rem;
+    }
+
+    .list section {
+        overflow-x: hidden;
     }
 }

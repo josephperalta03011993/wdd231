@@ -83,10 +83,14 @@ const list = document.querySelector("#list");
 
 grid.addEventListener('click', () => {
     cards.classList.add("grid");
+    grid.classList.add('btn-active');
+    list.classList.remove("btn-active");
     cards.classList.remove("list");
 });
 
 list.addEventListener('click', () => {
+    grid.classList.remove("btn-active");
+    list.classList.add("btn-active");
     cards.classList.add("list");
     cards.classList.remove("grid");
 });

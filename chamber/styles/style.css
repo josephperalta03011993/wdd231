@@ -104,7 +104,7 @@ section {
     color: var(--background-color-contrast);
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
+    border: 2px solid white;
     overflow: hidden;
 }
 
@@ -118,9 +118,10 @@ section p {
 }
 
 section:hover {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     color: var(--primary-color);
     transition: .2s ease-in;
+    box-shadow: none;
 }
 
 .list {
@@ -135,6 +136,7 @@ section:hover {
     padding: 0.25rem;
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow-x: scroll;
 }
 
 .list section > * {
@@ -175,6 +177,14 @@ p {
 }
 
 .filter button:hover {
+    background-color: var(--primary-color-contrast);
+    color: var(--background-color-contrast);
+    border: 1px solid var(--primary-color);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.filter .btn-active {
     background-color: var(--primary-color-contrast);
     color: var(--background-color-contrast);
     border: 1px solid var(--primary-color);
