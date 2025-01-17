@@ -111,7 +111,6 @@ section:hover {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     transition: .2s ease-in;
-    box-sizing: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 p {
