@@ -33,12 +33,14 @@ const displayMembers = (members) => {
         let companyName = document.createElement('h2');
         let address = document.createElement('p');
         let contact = document.createElement('p');
+        let membershipLevel = document.createElement('p');
         let website = document.createElement('a');
 
         // Build h2 show member fullname
         companyName.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         contact.textContent = `${member.phone_number}`;
+        membershipLevel.textContent = `Membership Level: ${member.membership_level}`;
         website.textContent = `${member.website}`;
 
         // website attribute
@@ -56,6 +58,7 @@ const displayMembers = (members) => {
         card.appendChild(companyName);
         card.appendChild(address);
         card.appendChild(contact);
+        card.appendChild(membershipLevel)
         card.appendChild(website);
         
         cards.appendChild(card);
@@ -69,34 +72,6 @@ getMembersData();
 // button elements
 const grid = document.querySelector("#grid");
 const list = document.querySelector("#list");
-
-async function jsonFetch(url) {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data.members;
-}
-
-const getMembers = async (filter = "all") => 
-    {
-        let members = await jsonFetch(url);
-
-        switch(filter) {
-            case "grid":
-                alert("GRID");
-                break;
-            case "list":
-                alert("LIST");
-                break;
-        }
-
-        displayMembers(members);
-    }
-
-// button event listeners
-function clearButtonClaases() {
-    filteredButtons = document.querySelectorAll("button");
-    filteredButtons.forEach(button => button.className = "");
-}
 
 grid.addEventListener('click', () => {
     cards.classList.add("grid");
