@@ -39,6 +39,14 @@ nav {
     padding: .25rem 2vw;
 }
 
+#hamburger::before {
+    content: "\2630";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
 .menu-links {
     margin: 0;
     padding: 0;

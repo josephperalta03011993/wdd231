@@ -2,12 +2,15 @@
     
     header {
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: 75px 200px auto;
     }
-
-    header img {
-        width: 2rem;
-        height: 2rem;
+    
+    #company-desc {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
     }
 
     #hamburger {
