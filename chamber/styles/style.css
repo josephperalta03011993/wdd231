@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #164E70;
+    --primary-color-contrast: #FFF;
+    --background-color: #FFFFFD;
+    --background-color-contrast: #000;
+    --button-color: #64301D;
+    --button-color-contrast: #E6EDEF;
+}
+
+body {
+    font-family: "Kodchasan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
