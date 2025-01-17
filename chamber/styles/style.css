@@ -7,7 +7,7 @@
     --button-color-contrast: #E6EDEF;
 }
 
-body {
+body, html {
     font-family: "Kodchasan", serif;
     font-weight: 400;
     font-style: normal;
@@ -85,7 +85,7 @@ li.current-menu-item a {
 }
 
 main {
-    padding: 0 5rem;
+    padding: 0 .5rem;
 }
 
 .grid {
@@ -104,7 +104,7 @@ section {
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 1px solid white;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 section:hover {
@@ -116,4 +116,28 @@ section:hover {
 p {
     margin: .1rem;
     font-size: 14px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.filter button {
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+    border: 1px solid var(--primary-color);
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.filter button:hover {
+    background-color: var(--primary-color-contrast);
+    color: var(--background-color-contrast);
+    border: 1px solid var(--primary-color);
+    padding: .5rem;
+    cursor: pointer;
 }

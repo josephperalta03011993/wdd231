@@ -48,8 +48,8 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Company logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '200');
-        logo.setAttribute('height', '70');
+        logo.setAttribute('width', '177');
+        logo.setAttribute('height', '87');
 
         // Append the section(card) with the created elements
         card.appendChild(logo);
@@ -99,15 +99,13 @@ function clearButtonClaases() {
 }
 
 grid.addEventListener('click', () => {
-    clearButtonClaases();
-    getMembers("grid");
-    grid.classList.add("active");
+    cards.classList.add("grid");
+    cards.classList.remove("list");
 });
 
 list.addEventListener('click', () => {
-    clearButtonClaases();
-    getMembers("list");
-    list.classList.add("active")
+    cards.classList.add("list");
+    cards.classList.remove("grid");
 });
 
 /* End of Members directory script */

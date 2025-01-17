@@ -37,4 +37,8 @@
     nav.navigation {
         grid-column: 3 / 4;
     }
+
+    main {
+        padding: 0 5rem;
+    }
 }
