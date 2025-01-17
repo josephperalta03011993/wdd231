@@ -8,7 +8,7 @@
     --footer-background: #F0F0F0;
 }
 
-body, html {
+body, html, footer {
     font-family: "Kodchasan", serif;
     font-weight: 400;
     font-style: normal;
@@ -209,7 +209,7 @@ footer {
     justify-content: center;
 }
 
-footer span {
+footer div {
     flex: 1;
     padding: 1rem;
 }
@@ -219,14 +219,22 @@ footer span {
     flex: row;
     gap: 1rem;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .socials li a {
     border-radius: 50%;
     background-color: var(--primary-color-contrast);
     text-decoration: none;
-    padding: 27px 10px 7px 10px;
+    padding: 1rem;
     border: 2px solid var(--primary-color);
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    text-align: center;
+    line-height: 36px; 
+    transition: all 0.3s ease;
 }
 
 .socials li a:hover {
