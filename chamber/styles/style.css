@@ -205,6 +205,11 @@ p {
     padding: 0;
 }
 
+footer {
+    background-color: var(--footer-background);
+    margin-top: 1rem;
+}
+
 footer div {
     padding: 1rem;
 }
