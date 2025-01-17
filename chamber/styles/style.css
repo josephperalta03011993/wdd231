@@ -11,4 +11,59 @@ body {
     font-family: "Kodchasan", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+    border-bottom: 1px solid var(--primary-color-contrast);
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 75px auto 44px;
+    align-items: center;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+#hamburger {
+    font-size: 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    padding: .25rem 2vw;
+}
+
+.menu-links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu-links li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--primary-color-contrast);
+    text-decoration: none;
+}
+
+/* active menu item */
+li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.2); /* black 20% */
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
 }

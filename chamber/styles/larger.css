@@ -1,0 +1,30 @@
+@media only screen and (min-width: 38rem) {
+    
+    header {
+        border: none;
+        font-size: 2rem;
+    }
+
+    header img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .navigation, .navigation.open {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+}
