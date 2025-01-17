@@ -107,7 +107,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 2px solid white;
     overflow: hidden;
-    width: 250px;
     max-width: 320px;
 }
 
