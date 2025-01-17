@@ -42,14 +42,14 @@ const displayMembers = (members) => {
         contact.textContent = `${member.phone_number}`;
         
         if(member.membership_level === 1) {
-            membershipLevel.textContent = `Membership Level: Member`;
+            membershipLevel.textContent = `Membership: Member`;
         } else if (member.membership_level === 2) {
-            membershipLevel.textContent = `Membership Level: Silver`;
+            membershipLevel.textContent = `Membership: Silver`;
         } else if (member.membership_level === 3) {
-            membershipLevel.textContent = `Membership Level: Gold`;
+            membershipLevel.textContent = `Membership: Gold`;
         }
         
-        website.textContent = `${member.website}`;
+        website.textContent = `${member.url}`;
 
         // website attribute
         website.setAttribute('href', `${member.website}`)

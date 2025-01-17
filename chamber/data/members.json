@@ -5,6 +5,7 @@
             "address": "Quirino Highway, Brgy. San Manuel",
             "phone_number": "09399295090",
             "website": "https://hotelsavano.ph",
+            "url": "hotelsavano.ph",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/savano-park.webp",
             "membership_level": 3,
             "other": "N/A"
@@ -14,6 +15,7 @@
             "address": "Bangkal Meycauayan",
             "phone_number": "09628201853",
             "website": "https://rosarypestcontrol.com",
+            "url": "rosarypestcontrol.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/pest-control.webp",
             "membership_level": 1,
             "other": "N/A"
@@ -23,6 +25,7 @@
             "address": "695 JP Rizal SJDM",
             "phone_number": "09222570708",
             "website": "crea8-advertising-services.business.site",
+            "url": "crea8-advertising.site",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/crea8.webp",
             "membership_level": 2,
             "other": "N/A"
@@ -32,6 +35,7 @@
             "address": "San Vicente Malolos",
             "phone_number": "09751557891",
             "website": "https://eephotographyph.com",
+            "url": "eephotographyph.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/photography.webp",
             "membership_level": 2,
             "other": "N/A"
@@ -41,6 +45,7 @@
             "address": "Skyline Rd. Tungkong Mangga",
             "phone_number": "09325728076",
             "website": "https://geeksandnerdsmedia.com",
+            "url": "geeksandnerdsmedia.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/geek.webp",
             "membership_level": 3,
             "other": "N/A"
@@ -50,6 +55,7 @@
             "address": "2099 Azicate Homes, Lolomboy",
             "phone_number": "09099144123",
             "website": "https://jgsibayanprintingpress.wordpress.com/",
+            "url": "jgsibayanprintingpress.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/printing-company.webp",
             "membership_level": 1,
             "other": "N/A"
@@ -59,7 +65,8 @@
             "address": "307 Brgy. Balasing Malolos",
             "phone_number": "099353721047",
             "website": "https://sarisaristoreonline2011.com",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "url": "sarisaristoreonline2011.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/sari-sari.webp",
             "membership_level": 1,
             "other": "N/A"
         },
@@ -68,7 +75,8 @@
             "address": "954 Barangay Malis, Guiguinto",
             "phone_number": "02-533-0496",
             "website": "https://fairdealchem.com",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "url": "fairdealchem.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/fairdeal.webp",
             "membership_level": 2,
             "other": "N/A"
         },
@@ -77,7 +85,8 @@
             "address": "380 Pulo, San Rafael",
             "phone_number": "(044) 230-7121",
             "website": "https://humaneph.com",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "url": "humaneph.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/humane.webp",
             "membership_level": 3,
             "other": "N/A"
         },
@@ -86,7 +95,8 @@
             "address": "444, Dr. Luis Reyes Street, Concepcion",
             "phone_number": "09177266455",
             "website": "https://kalamilksoap.com",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "url": "kalamilksoap.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/kala.webp",
             "membership_level": 3,
             "other": "N/A"
         },
@@ -95,7 +105,8 @@
             "address": "Burol Street, McArthur Highway",
             "phone_number": "(044) 693-1484",
             "website": "https://company.meralco.com.ph/meralco-online",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "url": "meralco.com.ph",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/meralco.webp",
             "membership_level": 3,
             "other": "N/A"
         }
