@@ -234,3 +234,7 @@ footer span {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     color: var(--background-color-contrast);
 }
+
+#currentyear, #lastModified {
+    padding: 0;
+}
