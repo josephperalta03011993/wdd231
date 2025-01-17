@@ -92,6 +92,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
+    padding: 1rem;
 }
 
 section {
@@ -107,10 +108,45 @@ section {
     overflow: hidden;
 }
 
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
 section:hover {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     transition: .2s ease-in;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
 }
 
 p {
