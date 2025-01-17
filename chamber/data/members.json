@@ -2,99 +2,99 @@
     "members": [
         {
             "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
+            "address": "Quirino Highway, Brgy. San Manuel",
+            "phone_number": "09399295090",
+            "website": "https://hotelsavano.ph",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
             "membership_level": 3,
             "other": "N/A"
         },
         {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
+            "name" : "Rosary Pest Control Services",
+            "address": "Bangkal Meycauayan",
+            "phone_number": "09628201853",
+            "website": "https://rosarypestcontrol.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "membership_level": 1,
+            "other": "N/A"
+        },
+        {
+            "name" : "Crea8 Advertising Services",
+            "address": "695 JP Rizal SJDM",
+            "phone_number": "09222570708",
+            "website": "crea8-advertising-services.business.site",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "membership_level": 2,
+            "other": "N/A"
+        },
+        {
+            "name" : "E&E Photography",
+            "address": "San Vicente Malolos",
+            "phone_number": "09751557891",
+            "website": "www.eephotographyph.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "membership_level": 2,
+            "other": "N/A"
+        },
+        {
+            "name" : "Geeks and Nerds Media Solutions",
+            "address": "Skyline Rd. Tungkong Mangga",
+            "phone_number": "09325728076",
+            "website": "geeksandnerdsmedia.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
             "membership_level": 3,
             "other": "N/A"
         },
         {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "(+63) 999295090",
-            "website": "https://hotelsavano.ph/",
+            "name" : "JGSibayan Printing Press",
+            "address": "2099 Azicate Homes, Lolomboy",
+            "phone_number": "09099144123",
+            "website": "jgsibayanprintingpress.wordpress.com/",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "membership_level": 1,
+            "other": "N/A"
+        },
+        {
+            "name" : "Sarisari Store Online Blue",
+            "address": "307 Brgy. Balasing Malolos",
+            "phone_number": "099353721047",
+            "website": "sarisaristoreonline2011.com",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "membership_level": 1,
+            "other": "N/A"
+        },
+        {
+            "name" : "Fairdeal Import Marketing & Services",
+            "address": "954 Barangay Malis, Guiguinto",
+            "phone_number": "02-533-0496",
+            "website": "fairdealchem.com.web",
+            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
+            "membership_level": 2,
+            "other": "N/A"
+        },
+        {
+            "name" : "Humane Strategic Consulting",
+            "address": "380 Pulo, San Rafael",
+            "phone_number": "(044) 230-7121",
+            "website": "humaneph.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
             "membership_level": 3,
             "other": "N/A"
         },
         {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
+            "name" : "Kala Milk Soap Enterprise",
+            "address": "444, Dr. Luis Reyes Street, Concepcion",
+            "phone_number": "09177266455",
+            "website": "www.kalamilksoap.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
             "membership_level": 3,
             "other": "N/A"
         },
         {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
-            "membership_level": 3,
-            "other": "N/A"
-        },
-        {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
-            "membership_level": 3,
-            "other": "N/A"
-        },
-        {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
-            "membership_level": 3,
-            "other": "N/A"
-        },
-        {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
-            "membership_level": 3,
-            "other": "N/A"
-        },
-        {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
-            "membership_level": 3,
-            "other": "N/A"
-        },
-        {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
-            "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
-            "membership_level": 3,
-            "other": "N/A"
-        },
-        {
-            "name" : "Savano Park Commercial Hub",
-            "address": "Quirino Highway, Brgy. San Manuel, San Jose del Monte City Bulacan, Philippines",
-            "phone_number": "+639399295090",
-            "website": "https://hotelsavano.ph/",
+            "name" : "Meralco - Balagtas Branch",
+            "address": "Burol Street, McArthur Highway",
+            "phone_number": "(044) 693-1484",
+            "website": "www.meralco.com.ph",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/placeholder-logo.webp",
             "membership_level": 3,
             "other": "N/A"

@@ -40,7 +40,15 @@ const displayMembers = (members) => {
         companyName.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         contact.textContent = `${member.phone_number}`;
-        membershipLevel.textContent = `Membership Level: ${member.membership_level}`;
+        
+        if(member.membership_level === 1) {
+            membershipLevel.textContent = `Membership Level: Member`;
+        } else if (member.membership_level === 2) {
+            membershipLevel.textContent = `Membership Level: Silver`;
+        } else if (member.membership_level === 3) {
+            membershipLevel.textContent = `Membership Level: Gold`;
+        }
+        
         website.textContent = `${member.website}`;
 
         // website attribute
