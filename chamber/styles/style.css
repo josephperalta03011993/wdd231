@@ -85,14 +85,14 @@ li.current-menu-item a {
 }
 
 main {
-    padding: 0 .5rem;
+    padding: 0;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
-    padding: 1rem;
+    justify-items: center;
 }
 
 section {
@@ -106,10 +106,13 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 2px solid white;
     overflow: hidden;
+    width: 250px;
+    max-width: 320px;
 }
 
 section h2 {
     margin-top: 0;
+    font-size: large;
 }
 
 section p {
@@ -137,6 +140,7 @@ section:hover {
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.2);
     overflow-x: scroll;
+    width: 320px;
 }
 
 .list section > * {
@@ -190,4 +194,8 @@ p {
     border: 1px solid var(--primary-color);
     padding: .5rem;
     cursor: pointer;
+}
+
+.center {
+    text-align: center;
 }
