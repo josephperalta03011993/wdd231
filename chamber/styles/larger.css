@@ -37,6 +37,7 @@
 
     .navigation ul li a {
         font-size: 1rem;
+        color: var(--primary-color-contrast);
     }
 
     .navigation a:hover {

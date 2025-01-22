@@ -85,6 +85,14 @@ li.current-menu-item a {
     overflow: hidden;
 }
 
+.navigation ul li a{
+    color: var(--background-color-contrast);
+}
+
+nav.open ul li a {
+    color: var(--primary-color-contrast);
+}
+
 main {
     padding: 0;
 }
