@@ -19,7 +19,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- JS -->
     <script defer src="scripts/home-script.js"></script>
 </head>
@@ -53,23 +53,36 @@
         </section>    
         <div id="home-container">
             <h1>Home</h1>
-            
-            <!-- Events -->
-            <section id="events">
-                <h2>Events</h2>
-            </section>
+            <div id="weather-section">
+                <!-- Events -->
+                <section id="events">
+                    <h2>Events</h2>
+                </section>
 
-            <!-- Current Weather -->
-            <section id="current-weather">
-                <h2>Current Weather</h2>
-            </section>
-            
-            <!-- Weather Forecast -->
-            <section id="weather-forecast">
-                <h2>Weather Forecast</h2>
-            </section>
-            
+                <!-- Current Weather -->
+                <section id="current-weather">
+                    <h2>Current Weather</h2>
+                    <div id="current-weather-description">
+                        <img src="" alt="" id="img-weather">
+                        <div id="current-weather-details">
+                            <strong><p id="temp"></p></strong>
+                            <p id="weather"></p>
+                            <p id="temp-high"></p>
+                            <p id="temp-low"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Weather Forecast -->
+                <section id="weather-forecast">
+                    <h2>Weather Forecast</h2>
+                </section>
+            </div>
             <!-- Top Companies -->
+            <h2>Company Spotlight</h2>
             <section class="spotlights" id="spotlights"></section>
         </div>
     </main>
@@ -101,5 +114,6 @@
             <p id="footer-lastmodified-paragraph">Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
+    <script src="scripts/weather-api.js"></script>
 </body>
 </html>

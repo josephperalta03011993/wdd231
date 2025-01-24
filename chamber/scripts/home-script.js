@@ -53,12 +53,20 @@ const displayMembers = (topMembers) => {
         let hr = document.createElement('hr');
         let infoDiv = document.createElement('div');
         let textDiv = document.createElement('div');
+        let membershipLevel = document.createElement('p');
 
         // Build h2 show member fullname
         companyName.textContent = `${member.name}`;
         tagline.textContent = `${member.tagline}`;
         email.textContent = `EMAIL: ${member.email}`;
         contact.textContent = `PHONE: ${member.phone_number}`;
+        if(member.membership_level === 1) {
+            membershipLevel.textContent = `MEMBERSHIP: Member`;
+        } else if (member.membership_level === 2) {
+            membershipLevel.textContent = `MEMBERSHIP: Silver`;
+        } else if (member.membership_level === 3) {
+            membershipLevel.textContent = `MEMBERSHIP: Gold`;
+        }
         website.textContent = `URL: ${member.url}`;
 
         // website attribute
@@ -77,6 +85,7 @@ const displayMembers = (topMembers) => {
         textDiv.appendChild(email);
         textDiv.appendChild(contact);
         textDiv.appendChild(website);
+        textDiv.appendChild(membershipLevel);
         infoDiv.appendChild(logo);
         infoDiv.appendChild(textDiv);
 
