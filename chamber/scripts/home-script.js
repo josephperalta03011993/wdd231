@@ -22,14 +22,21 @@ async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
 
-    // this function expects an array that is why we will use data.members instead of just data
-    displayMembers(data.members);
+    // filter the array for Gold and Silver
+    const filteredMembers = data.members.filter(member => member.membership_level === 2 || member.membership_level === 3);
+    if (filteredMembers.length > 0) {
+        // Lets get random item from the list
+        const shuffleMembers = filteredMembers.sort(() => Math.random() - 0.5);    
+
+        // Limit to only top 3 members
+        const topMembers = shuffleMembers.slice(0, 3);
+
+        // this function expects an array that is why we will use data.members instead of just data
+        displayMembers(topMembers);
+    }
 }
 
-const displayMembers = (members) => {
-    // Limit to only top 3 members
-    const topMembers = members.slice(0, 3);
-
+const displayMembers = (topMembers) => {
     // build cards
     const cards = document.querySelector("section#spotlights");
     cards.innerHTML = "";

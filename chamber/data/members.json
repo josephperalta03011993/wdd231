@@ -44,7 +44,9 @@
             "url": "eephotographyph.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/photography.webp",
             "membership_level": 2,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "photographyph@gmail.com",
+            "tagline": "Every Shot Tells Your Story"
         },
         {
             "name" : "Geeks and Nerds Media Solutions",
@@ -54,7 +56,9 @@
             "url": "geeksandnerdsmedia.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/geek.webp",
             "membership_level": 3,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "geekmedia@gmail.com",
+            "tagline": "Smart Strategies for a Digital World"
         },
         {
             "name" : "JGSibayan Printing Press",
@@ -64,7 +68,9 @@
             "url": "jgsibayanprintingpress.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/printing-company.webp",
             "membership_level": 1,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "jgsibayan@gmail.com",
+            "tagline": "Precision Printing, Timeless Quality"
         },
         {
             "name" : "Sarisari Store Online Blue",
@@ -74,7 +80,9 @@
             "url": "sarisaristoreonline2011.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/sari-sari.webp",
             "membership_level": 1,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "ssstoreonline@gmail.com",
+            "tagline": "Essentials Online, Anytime"
         },
         {
             "name" : "Fairdeal Import Marketing & Services",
@@ -84,7 +92,9 @@
             "url": "fairdealchem.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/fairdeal.webp",
             "membership_level": 2,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "fairdealchem@gmail.com",
+            "tagline": "Your Partner in Global Trade"
         },
         {
             "name" : "Humane Strategic Consulting",
@@ -94,7 +104,9 @@
             "url": "humaneph.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/humane.webp",
             "membership_level": 3,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "humaneph@gmail.com",
+            "tagline": "Strategic Guidance with a Human Touch"
         },
         {
             "name" : "Kala Milk Soap Enterprise",
@@ -104,7 +116,9 @@
             "url": "kalamilksoap.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/kala.webp",
             "membership_level": 3,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "kalamilksoap@gmail.com",
+            "tagline": "Luxury from Nature, for Your Skin"
         },
         {
             "name" : "Meralco - Balagtas Branch",
@@ -114,7 +128,9 @@
             "url": "meralco.com.ph",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/meralco.webp",
             "membership_level": 3,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "meralco@gmail.com",
+            "tagline": "Ang Liwanag ng Bukas"
         }
     ]
 }
