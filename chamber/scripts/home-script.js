@@ -44,17 +44,21 @@ const displayMembers = (members) => {
         let website = document.createElement('a');
         let card = document.createElement('section');
         let hr = document.createElement('hr');
+        let infoDiv = document.createElement('div');
+        let textDiv = document.createElement('div');
 
         // Build h2 show member fullname
         companyName.textContent = `${member.name}`;
         tagline.textContent = `${member.tagline}`;
-        email.textContent = `${member.email}`;
-        contact.textContent = `${member.phone_number}`;
-        website.textContent = `${member.url}`;
+        email.textContent = `EMAIL: ${member.email}`;
+        contact.textContent = `PHONE: ${member.phone_number}`;
+        website.textContent = `URL: ${member.url}`;
 
         // website attribute
         website.setAttribute('href', `${member.website}`)
         hr.setAttribute('class', 'breakline');
+        infoDiv.setAttribute('class', 'infoDiv');
+        textDiv.setAttribute('class', 'textDiv');
         // Build img portrait set attributes
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Company logo of ${member.name}`);
@@ -62,14 +66,18 @@ const displayMembers = (members) => {
         logo.setAttribute('width', '75');
         logo.setAttribute('height', '75');
 
+        // Append the info to the div
+        textDiv.appendChild(email);
+        textDiv.appendChild(contact);
+        textDiv.appendChild(website);
+        infoDiv.appendChild(logo);
+        infoDiv.appendChild(textDiv);
+
         // Append the section(card) with the created elements
         card.appendChild(companyName);
         card.appendChild(tagline);
         card.appendChild(hr);
-        card.appendChild(logo);
-        card.appendChild(email);
-        card.appendChild(contact);
-        card.appendChild(website);
+        card.appendChild(infoDiv);
         
         cards.appendChild(card);
     });
