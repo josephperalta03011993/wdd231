@@ -1,6 +1,7 @@
 :root {
     --primary-color: #164E70;
     --primary-color-contrast: #FFF;
+    --secondary-color: #FFA500;
     --background-color: #FFFFFD;
     --background-color-contrast: #000;
     --button-color: #64301D;
@@ -9,7 +10,7 @@
 }
 
 body, html, footer, footer div {
-    font-family: "Kodchasan", serif;
+    font-family: "Noto Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -246,3 +247,40 @@ footer div {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     color: var(--background-color-contrast);
 }
+
+/* Home Page */
+/* Button Styling */
+section.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+}
+
+section.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--background-color-contrast);
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta-button:hover {
+    background-color: #e09200;
+}
+/* End of Home Page */
