@@ -55,7 +55,7 @@
 
     section {
         width: clamp(300px, 100%, 350px);
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .list section {

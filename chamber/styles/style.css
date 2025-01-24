@@ -117,7 +117,7 @@ section {
     border: 2px solid white;
     overflow: hidden;
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
 }
 
 section h2 {
@@ -249,13 +249,13 @@ footer div {
 }
 
 /* Home Page */
-/* Button Styling */
 section.hero {
     position: relative;
-    width: 100%;
     max-width: 100%;
     height: 50vh;
     padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 section.hero img {
