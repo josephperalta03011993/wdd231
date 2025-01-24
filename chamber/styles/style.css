@@ -130,7 +130,7 @@ section p {
     font-size: smaller;
 }
 
-section:hover {
+#cards section:hover {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     transition: .2s ease-in;
@@ -298,6 +298,7 @@ section.hero img:hover {
 .spotlights {
     margin-top: 1rem;
     padding: 0;
+    padding-bottom: 1rem;
     max-width: 100%;
     border: none;
     box-shadow: none;
@@ -305,5 +306,17 @@ section.hero img:hover {
 
 .spotlights section {
     margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.spotlights section h2{
+    margin-bottom: 0;
+}
+
+.breakline {
+    height: 1px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CCC;
 }
 /* end of spotlight cards */

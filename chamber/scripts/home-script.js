@@ -43,7 +43,7 @@ const displayMembers = (members) => {
         let contact = document.createElement('p');
         let website = document.createElement('a');
         let card = document.createElement('section');
-        let address = document.createElement('p');
+        let hr = document.createElement('hr');
 
         // Build h2 show member fullname
         companyName.textContent = `${member.name}`;
@@ -54,7 +54,7 @@ const displayMembers = (members) => {
 
         // website attribute
         website.setAttribute('href', `${member.website}`)
-
+        hr.setAttribute('class', 'breakline');
         // Build img portrait set attributes
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Company logo of ${member.name}`);
@@ -63,9 +63,11 @@ const displayMembers = (members) => {
         logo.setAttribute('height', '75');
 
         // Append the section(card) with the created elements
-        card.appendChild(logo);
         card.appendChild(companyName);
-        card.appendChild(address);
+        card.appendChild(tagline);
+        card.appendChild(hr);
+        card.appendChild(logo);
+        card.appendChild(email);
         card.appendChild(contact);
         card.appendChild(website);
         
