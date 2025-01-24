@@ -333,6 +333,7 @@ section.hero img:hover {
 
 .infoDiv img{
     padding-right: .5rem;
+    object-fit: contain;
 }
 
 .textDiv {
