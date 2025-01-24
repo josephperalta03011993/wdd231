@@ -32,8 +32,8 @@ apiFetch();
 function displayResults(data) {
     const desc = data.weather[0]['description'].toUpperCase();
     const icon = data.weather[0]['icon'];
-    const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
-    const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+    const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+    const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
 
     temp.innerHTML = Math.round(data.main['temp']) + '&deg; C';
     tempMax.innerHTML = 'High: ' + Math.round(data.main['temp_max']) + '&deg;';
@@ -44,9 +44,10 @@ function displayResults(data) {
     sunset.innerHTML = 'Sunset: ' + sunsetTime;
 
     // Icon img
-    const imgURL = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    const imgURL = `https://openweathermap.org/img/wn/${icon}@4x.png`;
     weatherIcon.setAttribute('SRC', imgURL);
     weatherIcon.setAttribute('ALT', desc);
     weatherIcon.setAttribute('WIDTH', 150);
     weatherIcon.setAttribute('HEIGHT', 150);
+    weatherIcon.setAttribute('OBJECT-FIT', 'contain');
 }
