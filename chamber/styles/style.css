@@ -293,3 +293,17 @@ section.hero img:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 /* End of Home Page */
+
+/* Spotlight of Cards */
+.spotlights {
+    margin-top: 1rem;
+    padding: 0;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+.spotlights section {
+    margin-top: 1rem;
+}
+/* end of spotlight cards */

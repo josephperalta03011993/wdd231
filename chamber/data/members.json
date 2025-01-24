@@ -8,7 +8,9 @@
             "url": "hotelsavano.ph",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/savano-park.webp",
             "membership_level": 3,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "savano@gmail.com",
+            "tagline": "The Heart of the Community"
         },
         {
             "name" : "Rosary Pest Control Services",
@@ -18,7 +20,9 @@
             "url": "rosarypestcontrol.com",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/pest-control.webp",
             "membership_level": 1,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "rosarypc@gmail.com",
+            "tagline": "Pest-Free Living Now"
         },
         {
             "name" : "Crea8 Advertising Services",
@@ -28,7 +32,9 @@
             "url": "crea8-advertising.site",
             "image": "https://josephperalta03011993.github.io/wdd231/chamber/images/crea8.webp",
             "membership_level": 2,
-            "other": "N/A"
+            "other": "N/A",
+            "email": "crea8@gmail.com",
+            "tagline": "Elevate Your Vision"
         },
         {
             "name" : "E&E Photography",
