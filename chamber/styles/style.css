@@ -305,8 +305,10 @@ section.hero img:hover {
 }
 
 .spotlights section {
+    padding: 1rem 0;
     margin-top: 1rem;
     border-radius: 1rem;
+    max-width: 96%;
 }
 
 .spotlights section h2{
@@ -339,3 +341,22 @@ section.hero img:hover {
     align-items: flex-start;
 }
 /* end of spotlight cards */
+
+/* Home - Events, weather forecast, current weather */
+#events, #weather-forecast, #current-weather {
+    max-width: 100%;
+    padding: 0;
+    border: none;
+    margin: .5rem 0;
+}
+#events h2, #weather-forecast h2, #current-weather h2{
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+    width: 100%;
+    border: none;
+}
+
+#home-container {
+    padding: 1rem;
+}
+/* End of Home Section */
