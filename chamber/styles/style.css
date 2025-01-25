@@ -362,6 +362,19 @@ section.hero img:hover {
     width: 100%;
     border: none;
 }
+#weather-event-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: smaller;
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.event-content {
+    width: 70px;
+}
 
 #home-container {
     padding: 1rem;

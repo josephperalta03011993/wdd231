@@ -9,6 +9,7 @@ const weatherIcon = document.querySelector('#img-weather');
 const today = document.querySelector('#today');
 const tomorrow = document.querySelector('#tomorrow');
 const dayThree = document.querySelector('#day-three');
+const weatherEvents = document.querySelector('#weather-event-container');
 
 const APIKey = "3242e7f2673b3b98a4a563d053ce258a";
 const lat = "14.815761836194232";
@@ -31,22 +32,41 @@ async function apiFetch() {
 }
 
 async function apiForecastFetch() {
-    try {
-      const response = await fetch(apiURLForecast);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data); // testing only
-        displayForecastResults(data);
-      } else {
-          throw Error(await response.text());
-      }
-    } catch (error) {
-        console.log(error);
+  try {
+    const response = await fetch(apiURLForecast);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // testing only
+      displayForecastResults(data);
+      displayWeatherEvent(data);
+    } else {
+        throw Error(await response.text());
     }
+  } catch (error) {
+      console.log(error);
+  }
 }
 
 apiFetch();
 apiForecastFetch();
+
+function displayWeatherEvent(data) {
+    let eventHTML = "";
+    const getDateDay = (dateString) => {
+      const date = new Date(dateString);
+      const time = date.toLocaleTimeString('en-PH', {hour:'2-digit', minute:'2-digit'});
+      return date.toLocaleDateString('en-PH', { weekday: 'long' }) + ', ' + time;
+    }
+
+    data.list.forEach(element => {
+      const weatherEventDesc = element.weather[0].description.toUpperCase();
+      const dateEvent = element.dt_txt;
+      const dayEventValue = getDateDay(dateEvent);
+      eventHTML += `<div><p class="event-content"><strong>${dayEventValue}</strong></p><hr><p>${weatherEventDesc}</p></div>`;
+    });
+
+    weatherEvents.innerHTML = eventHTML;
+}
 
 function displayResults(data) {
     const desc = data.weather[0]['description'].toUpperCase();
@@ -72,7 +92,6 @@ function displayResults(data) {
 }
 
 function displayForecastResults(data) {
-    
   try {
     const temp = Math.round(data['list'][0].main.temp);
     const tempTomorrow = Math.round(data['list'][6].main.temp);
