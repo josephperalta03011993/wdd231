@@ -111,6 +111,7 @@
         left: 15%;
         bottom: 24%;
         width: 10rem;
+        text-align: center;
     }
     .cta-button:hover {
         transform: scale(1.1);
