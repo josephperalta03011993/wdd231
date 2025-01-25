@@ -38,7 +38,7 @@ async function getMembersData() {
 
 const displayMembers = (topMembers) => {
     // build cards
-    const cards = document.querySelector("section#spotlights");
+    const cards = document.querySelector("div#spotlights");
     cards.innerHTML = "";
 
     topMembers.forEach(member => {

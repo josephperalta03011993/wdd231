@@ -127,7 +127,7 @@ section h2 {
 
 section p {
     font-weight: 600;
-    font-size: smaller;
+    font-size: 1rem;
 }
 
 #cards section {
@@ -254,7 +254,7 @@ footer div {
 }
 
 /* Home Page */
-section.hero {
+.hero {
     position: relative;
     max-width: 100%;
     max-height: 50vh;
@@ -265,7 +265,7 @@ section.hero {
     overflow: hidden;
 }
 
-section.hero img {
+.hero img {
     width: 100%;
     height: auto;
     box-shadow: none;
@@ -274,7 +274,7 @@ section.hero img {
     padding: 0;
 }
 
-section.hero img:hover {
+.hero img:hover {
     border: none;
     transition: none;
     box-shadow: none;
