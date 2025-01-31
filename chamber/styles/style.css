@@ -411,7 +411,7 @@ footer div {
 /* End of Home Section */
 
 /* Join Page */
-#join-main-container {
+#join-main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,6 +421,7 @@ footer div {
 
 #join-form {
     width: 100%;
+    text-align: left;
 }
 
 #join-main-container h2 {
@@ -437,10 +438,12 @@ footer div {
     width: 100%;
     margin-bottom: 1rem;
     box-sizing: border-box;
+    border-left: 3px solid var(--primary-color);
 }
 
 #membership-application-form option {
     width: 50%;
+    font-size: smaller;
 }
 
 #join-main-container #membership-application-form {
