@@ -409,3 +409,85 @@ footer div {
     margin-top: .5rem;
 }
 /* End of Home Section */
+
+/* Join Page */
+#join-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#join-form {
+    width: 100%;
+}
+
+#join-main-container h2 {
+    color: var(--primary-color);
+}
+
+#join-main-container h3 {
+    font-size: medium;
+}
+
+#membership-application-form input, textarea, select {
+    border: 1px solid #CCC;
+    padding: .5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+#membership-application-form option {
+    width: 50%;
+}
+
+#join-main-container #membership-application-form {
+    margin-top: 0;
+}
+
+#join-main-container #membership-levels {
+    margin-top: 1rem;
+}
+
+#join-main-container section {
+    box-shadow: none;
+}
+
+#join-main-container section div{ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #CCC;
+    border-radius: 0 1rem 0 1rem;
+}
+
+#gold {
+    background-color: #FFD700;
+}
+
+#silver {
+    background-color: #C0C0C0;
+}
+
+#bronze {
+    background-color: #F3CCA6;
+}
+
+#join-main-container button {
+    background-color: var(--primary-color);
+    color: var(--button-color-contrast);
+    padding: .5rem 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+#join-main-container button:hover {
+    background-color: var(--button-color-contrast);
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+}
+
+/* End of Join Page */

@@ -40,7 +40,63 @@
         </nav>
     </header>
     <main id="join-main-container">
-        
+        <h1>Join</h1>
+        <section id="membership-application-form">
+            <h2>Membership Application Form</h2>
+            <form id="join-form" action="thankyou.html" method="GET">
+                <label for="first_name">Applicant's First Name:</label>
+                <input type="text" name="first_name" id="first_name" required autocomplete="given-name" title="Enter your first name">
+                <br>
+                <label for="last_name">Applicant's Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required autocomplete="family-name" title="Enter your last name">
+                <br>
+                <label for="org_title">Applicant's Organizational Title:</label>
+                <input type="text" name="org_title" id="org_title" required pattern="[A-Za-z\s\-]{7,}" title="Enter your organizational title (letters, hyphens, spaces only, minimum 7 characters)">
+                <br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@yourdomain.com" title="Enter your email address">
+                <br>
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                <br>
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" name="organization" id="organization" required autocomplete="organization" title="Enter your business/organization name">
+                <br>
+                <label for="membership">Membership Level:</label>
+                <select name="membership" id="membership" required title="Select your membership level">
+                    <option value="np">Non-Profit Membership (Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <br>
+                <label for="description">Business/Organization Description:</label>
+                <textarea name="description" id="description" title="Provide a brief description of your business/organization"></textarea>
+                <br>
+                <input type="hidden" name="timestamp" id="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+                <button type="submit">Appy for Membership</button>
+            </form> 
+        </section>
+        <section id="membership-levels">
+            <h2>Membership Levels</h2>
+            <div id="non-profit">
+                <h3>Non Profit Membership Level</h3>
+                <button>Learn More</button>
+            </div>
+            <div id="bronze">
+                <h3>Bronze Membership Level</h3>
+                <button>Learn More</button>
+            </div>
+            <div id="silver">
+                <h3>Silver Membership Level</h3>
+                <button>Learn More</button>
+            </div>
+            <div id="gold">
+                <h3>Gold Membership Level</h3>
+                <button>Learn More</button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="contact-info">
