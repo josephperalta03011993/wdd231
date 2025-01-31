@@ -21,13 +21,50 @@ window.addEventListener('load', () => {
             membershipLevels.classList.add('show');
         }, index * 600); // Adjust delay between animations here
     });
+});
 
-    // const bronze = document.querySelector('#bronze');
-    // const silver = document.querySelector('#silver');
-    // const gold = document.querySelector('#gold');
-    
-    
-    // bronze.classList.add('show');
-    // silver.classList.add('show');
-    // gold.classList.add('show');
+const btnNP = document.querySelector('#btnNP');
+const btnBronze = document.querySelector('#btnBronze');
+const btnSilver = document.querySelector('#btnSilver');
+const btnGold = document.querySelector('#btnGold');
+const dialogBoxNP = document.querySelector('#dialogBoxNP');
+const dialogBoxBronze = document.querySelector('#dialogBoxBronze');
+const dialogBoxSilver = document.querySelector('#dialogBoxSilver');
+const dialogBoxGold = document.querySelector('#dialogBoxGold');
+const closeDialogNP = document.querySelector('#closeDialogNP');
+
+// Non-Profit Dialog Box
+btnNP.addEventListener('click', () => {
+    dialogBoxNP.showModal();
+});
+
+closeDialogNP.addEventListener('click', () => {
+    dialogBoxNP.close();
+});
+
+// Bronze Dialog Box
+btnBronze.addEventListener('click', () => {
+    dialogBoxBronze.showModal();
+});
+
+closeDialogBronze.addEventListener('click', () => {
+    dialogBoxBronze.close();
+});
+
+// Silver Dialog Box
+btnSilver.addEventListener('click', () => {
+    dialogBoxSilver.showModal();
+});
+
+closeDialogSilver.addEventListener('click', () => {
+    dialogBoxSilver.close();
+});
+
+// Gold Dialog Box
+btnGold.addEventListener('click', () => {
+    dialogBoxGold.showModal();
+});
+
+closeDialogGold.addEventListener('click', () => {
+    dialogBoxGold.close();
 });
