@@ -186,6 +186,21 @@
         width: 100%;
     }
 
+    #membership-levels div {
+        opacity: 0;
+        transform: translateY(50px); 
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+    }
+
+    #membership-levels div.show {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+
+    #membership-levels div:hover {
+        box-shadow: none;
+    }
+
     #membership-application-form option {
         width: 50%;
         font-size: medium;
@@ -200,5 +215,6 @@
     section#membership-levels {
         padding-top: 0%;
     }
+
     /* END JOIN PAGE*/
 }
