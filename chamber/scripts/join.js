@@ -31,40 +31,111 @@ const dialogBoxNP = document.querySelector('#dialogBoxNP');
 const dialogBoxBronze = document.querySelector('#dialogBoxBronze');
 const dialogBoxSilver = document.querySelector('#dialogBoxSilver');
 const dialogBoxGold = document.querySelector('#dialogBoxGold');
-const closeDialogNP = document.querySelector('#closeDialogNP');
+
+const dialogBox = document.querySelector('#dialogBox');
+
+function closeDialog() {
+    const closeDialog = dialogBox.querySelector('#closeDialog');
+    const btnX = dialogBox.querySelector('#btnX');
+
+    closeDialog.addEventListener('click', () => {
+        dialogBox.close();
+    });
+
+    btnX.addEventListener('click', () => {
+        dialogBox.close();
+    });
+}
 
 // Non-Profit Dialog Box
 btnNP.addEventListener('click', () => {
-    dialogBoxNP.showModal();
-});
+    dialogBox.innerHTML = `
+        <div id="dialogTitle">
+            <h3>Non-Profit Membership Level: Benefits</h3>
+            <button id="btnX">X</button>
+        </div>
+        <p>Join our community and make a difference!</p>
+        <ul>
+            <li>Basic (FREE)</li>
+            <li>Support our mission</li>
+            <li>Access to basic member events</li>
+            <li>Basic website listing</li>
+        </ul><br>
+        <button id="closeDialog" aria-label="Close dialog">Close</button>
+    `;
+    dialogBox.showModal();
 
-closeDialogNP.addEventListener('click', () => {
-    dialogBoxNP.close();
+    closeDialog();    
 });
 
 // Bronze Dialog Box
 btnBronze.addEventListener('click', () => {
-    dialogBoxBronze.showModal();
-});
+    dialogBox.innerHTML = `
+        <div id="dialogTitle">
+            <h3>Bronze Membership Level: Benefits</h3>
+            <button id="btnX">X</button>
+        </div>
+        <p>Join our community and make a difference!</p>
+        <ul>
+            <li>Bronze (PHP 2,500)</li>
+            <li>All Basic benefits</li>
+            <li>Access to basic member events</li>
+            <li>Basic website listing</li>
+            <li>Discounts on events</li>
+        </ul><br>
+        <button id="closeDialog" aria-label="Close dialog">Close</button>
+    `;
+    dialogBox.showModal();
 
-closeDialogBronze.addEventListener('click', () => {
-    dialogBoxBronze.close();
+    closeDialog();
 });
 
 // Silver Dialog Box
 btnSilver.addEventListener('click', () => {
-    dialogBoxSilver.showModal();
-});
+    dialogBox.innerHTML = `
+        <div id="dialogTitle">
+            <h3>Silver Membership Level: Benefits</h3>
+            <button id="btnX">X</button>
+        </div>
+        <p>Join our community and make a difference!</p>
+        <ul>
+            <li>Silver (PHP 5,000)</li>
+            <li>All Basic benefits</li>
+            <li>Access to basic member events</li>
+            <li>Basic website listing</li>
+            <li>Discounts on events</li>
+            <li>Access to member directory</li>
+            <li>Access to member-only events</li>
+        </ul><br>
+        <button id="closeDialog" aria-label="Close dialog">Close</button>
+    `;
+    dialogBox.showModal();
 
-closeDialogSilver.addEventListener('click', () => {
-    dialogBoxSilver.close();
+    closeDialog();
 });
 
 // Gold Dialog Box
 btnGold.addEventListener('click', () => {
-    dialogBoxGold.showModal();
-});
+    dialogBox.innerHTML = `
+        <div id="dialogTitle">
+            <h3>Gold Membership Level: Benefits</h3>
+            <button id="btnX">X</button>
+        </div>
+        <p>Join our community and make a difference!</p>
+        <ul>
+            <li>Gold (PHP 10,000)</li>
+            <li>All Basic benefits</li>
+            <li>Access to basic member events</li>
+            <li>Basic website listing</li>
+            <li>Discounts on events</li>
+            <li>Access to member directory</li>
+            <li>Access to member-only events</li>
+            <li>Priority listing on website</li>
+            <li>Priority listing in directory</li>
+        </ul><br>
+        <button id="closeDialog" aria-label="Close dialog">Close</button>
+    `;
+    dialogBox.showModal();
 
-closeDialogGold.addEventListener('click', () => {
-    dialogBoxGold.close();
+    closeDialog();
 });

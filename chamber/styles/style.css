@@ -497,4 +497,50 @@ footer div {
     color: var(--primary-color);
     text-align: center;
 }
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dialogBox {
+    border: 4px solid var(--primary-color);
+    padding: 0;
+}
+
+#dialogTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#dialogTitle button {
+    width: 44px;
+    height: 40px;
+    color: var(--button-color-contrast);
+    margin-top: .5rem;
+}
+
+#dialogTitle button:hover {
+    border: 1px solid var(--button-color-contrast);
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+}
+
+#dialogTitle {
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
+    padding: 0 .5rem;
+}
+
+#closeDialog {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#dialogBox p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
 /* End of Join Page */
