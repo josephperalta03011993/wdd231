@@ -16,10 +16,6 @@ body, html, footer, footer div {
     margin: 0;
 }
 
-body {
-    font-display: swap;
-}
-
 header {
     background-color: var(--primary-color);
     color: var(--primary-color-contrast);
