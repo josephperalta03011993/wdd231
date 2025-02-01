@@ -226,6 +226,7 @@ footer {
     margin-top: 1rem;
     min-height: 100px;
     width: 100%;
+    position: relative;
 }
 
 footer div {
