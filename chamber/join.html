@@ -11,18 +11,15 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://josephperalta03011993.github.io/wdd231/chamber/images/og-image.webp">
     <meta property="og:url" content="https://josephperalta03011993.github.io/wdd231/chamber/join.html">
-    <!-- Cache control meta tags -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000" />
-    <meta http-equiv="Expires" content="31536000" />
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
     <!-- Google Fonts -->
-    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" as="style">
 </head>
 <body>
     <header>
@@ -67,7 +64,7 @@
                     <input type="text" name="organization" id="organization" required autocomplete="organization" title="Enter your business/organization name">
                     <br>
                     <label for="membership">Membership Level:</label>
-                    <select name="membership" id="membership" required title="Select your membership level">
+                    <select name="membership" id="membership" title="Select your membership level">
                         <option value="np">Non-Profit Membership (Free)</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
