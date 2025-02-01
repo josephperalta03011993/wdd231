@@ -15,8 +15,8 @@
     <meta http-equiv="Cache-Control" content="max-age=31536000" />
     <meta http-equiv="Expires" content="31536000" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <img src="images/company-logo.webp" alt="Logo of Bulacan of Commerce" srcset="images/company-logo.webp" width="75" height="70">
+        <img src="images/company-logo.webp" alt="Logo of Bulacan of Commerce" srcset="images/company-logo.webp" width="75" height="70" loading="lazy">
         <span>
             <strong>Bulacan</strong><br>
             <span id="company-desc">Chamber of Commerce</span>
@@ -49,23 +49,25 @@
     </main>
     <footer>
         <div class="contact-info">
-            <p><strong>Bulacan Chamber of Commerce</strong></p>
-            <p>Hiyas ng Bulacan Convention Center
-                Provincial Capitol Compound, Guinhawa
-                City of Malolos, Bulacan
-            </p>
-            <p>info@bulacanchamber.com</p>
-            <p>(044) 791-2574, (044) 794-1754</p>
+            <address>
+                <p><strong>Bulacan Chamber of Commerce</strong></p>
+                <p>Hiyas ng Bulacan Convention Center
+                    Provincial Capitol Compound, Guinhawa
+                    City of Malolos, Bulacan
+                </p>
+                <p>info@bulacanchamber.com</p>
+                <p>(044) 791-2574, (044) 794-1754</p>
+            </address>
         </div>
         <div class="social-media">
             <a href="https://www.youtube.com/@josephperalta5999" target="_blank" rel="noopener noreferrer" aria-label="Youtube Icon">
-                <img src="images/youtube-icon.webp" alt="Youtube Icon" width="36" height="32">
+                <img src="images/youtube-icon.webp" alt="Youtube Icon" width="36" height="32" loading="lazy">
             </a>
             <a href="https://x.com/jdperalta93" target="_blank" rel="noopener noreferrer" aria-label="Twitter Icon">
-                <img src="images/twitter-icon.webp" alt="Twitter Icon" width="36" height="32">
+                <img src="images/twitter-icon.webp" alt="Twitter Icon" width="36" height="32" loading="lazy">
             </a>
             <a href="https://www.linkedin.com/in/jdperalta/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Icon">
-                <img src="images/linkedin-icon.webp" alt="LinkedIn Icon" width="36" height="32">
+                <img src="images/linkedin-icon.webp" alt="LinkedIn Icon" width="36" height="32" loading="lazy">
             </a>
         </div>
         <div class="project-info">

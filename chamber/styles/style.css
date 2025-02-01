@@ -230,7 +230,11 @@ footer {
 }
 
 footer div {
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+.contact-info, .social-media, .project-info {
+    min-height: 40px; /* Set minimum height for each section */
 }
 
 .social-media img {
