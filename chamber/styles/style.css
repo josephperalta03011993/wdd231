@@ -496,6 +496,7 @@ footer div {
 #thanks-main-container {
     color: var(--primary-color);
     text-align: center;
+    padding: 1rem;
 }
 
 ::backdrop {
@@ -543,4 +544,15 @@ footer div {
     margin-top: 1rem;
 }
 
+#showRequiredData {
+    text-align: left;
+    padding: 1rem;
+    color: var(--background-color-contrast);
+    border: 2px solid var(--primary-color);
+    border-radius: 1rem;
+}
+
+#thanks-main-container h2 {
+    font-size: medium;
+}
 /* End of Join Page */

@@ -23,6 +23,25 @@ window.addEventListener('load', () => {
     });
 });
 
+// Hidden timestamp
+const now = new Date();
+const timestamp = now.toISOString();
+const hiddenTimestamp = document.querySelector('#timestamp');
+const dateString = timestamp;
+const date = new Date();
+const formattedDate = date.toLocaleString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+    timeZone: "Asia/Manila" // Adjust to your local timezone if needed
+});
+hiddenTimestamp.value = formattedDate;
+
 const btnNP = document.querySelector('#btnNP');
 const btnBronze = document.querySelector('#btnBronze');
 const btnSilver = document.querySelector('#btnSilver');
