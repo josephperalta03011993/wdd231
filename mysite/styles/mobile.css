@@ -1,6 +1,5 @@
 :root {
     --primary-color: #9CE5FF;
-    --primary-font: #000000;
 }
 
 body {
@@ -15,7 +14,7 @@ body {
 
 .box {
     background-color: var(--primary-color);
-    color: var(--primary-font);
+    color: black;
     margin: 0;
     padding: 1rem;
 }
