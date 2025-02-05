@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #9CE5FF;
+    --primary-font: #000000;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    margin: 0;
+}
+
+.box {
+    background-color: var(--primary-color);
+    color: var(--primary-font);
+    margin: 0;
+    padding: 1rem;
+}
