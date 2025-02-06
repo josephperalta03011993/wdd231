@@ -4,7 +4,6 @@
 
 body {
     font-family: "Roboto", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -28,6 +27,6 @@ body {
 }
 
 #wireframe-images img {
-    max-width: 481;
-    height: 904;
+    max-width: 481px;
+    max-height: 1016px;
 }
