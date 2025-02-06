@@ -28,5 +28,6 @@ body {
 }
 
 #wireframe-images img {
-    max-width: 100%;
+    max-width: 481;
+    height: 904;
 }
