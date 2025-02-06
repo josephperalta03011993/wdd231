@@ -1,0 +1,8 @@
+@media only screen and (min-width: 38rem)
+{
+    #wireframe-images {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
