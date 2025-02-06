@@ -24,7 +24,6 @@ body {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    background-color: red;
 }
 
 #wireframe-images img {
