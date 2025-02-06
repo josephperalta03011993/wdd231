@@ -24,4 +24,9 @@ body {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    align-items: center;
+}
+
+#wireframe-images img {
+    max-width: 100%;
 }
