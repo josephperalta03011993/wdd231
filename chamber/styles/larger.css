@@ -302,6 +302,7 @@
         height: 80px;
         max-height: 200px;
         color: #2d2d2d;
+        margin-bottom: 0;
     }
 
     #discover-container img:hover {filter: contrast(50%);}
@@ -314,10 +315,11 @@
     }
     
     .btn:hover {
-        background-color: var(--button-color-contrast);
-        color: var(--primary-color);
+        background-color: var(--primary-color-contrast) !important;
+        color: var(--primary-color) !important;
         padding: .5rem 1rem;
         border: 1px solid var(--primary-color);
+        cursor: pointer;
     }
 
     #places-to-visit {
