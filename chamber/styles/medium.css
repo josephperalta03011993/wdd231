@@ -5,7 +5,7 @@
             "card1 card2" 
             "card3 card4" 
             "card5 card6"
-            "card7 card8."; 
+            "card7 card8"; 
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem; /* Sets the gap between grid items to 1rem */
     }
