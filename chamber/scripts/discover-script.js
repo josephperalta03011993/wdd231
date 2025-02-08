@@ -80,3 +80,29 @@ const places = [
 
     container.appendChild(card);
   });
+
+  // last visit
+  function displayVisitMessage() {
+    const sidebar = document.getElementById("sidebar");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
+
+    if (!lastVisit) {
+        sidebar.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitDate = parseInt(lastVisit, 10);
+        const timeDiff = now - lastVisitDate;
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+        if (daysDiff < 1) {
+            sidebar.textContent = "Back so soon! Awesome!";
+        } else {
+            const dayText = daysDiff === 1 ? "day" : "days";
+            sidebar.textContent = `You last visited ${daysDiff} ${dayText} ago.`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", now);
+}
+
+displayVisitMessage();
