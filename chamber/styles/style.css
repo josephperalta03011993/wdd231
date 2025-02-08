@@ -611,7 +611,7 @@ figure {
     background-color: var(--primary-color);
     color: var(--primary-color-contrast);
     border: none;
-    padding: .3rem 1rem;
+    padding: .5rem 1rem;
     margin-bottom: 1rem;
 }
 
