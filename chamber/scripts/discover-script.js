@@ -60,7 +60,7 @@ const places = [
     {
       name: "Tungtong Falls",
       address: "Paradise 2 SJDM",
-      description: "Tungtong Falls is a beautiful waterfall located in San Jose del Monte City, Bulacan, Philippines. It's a popular spot for swimming, picnicking, and enjoying the natural beauty of the area. Tungtong Falls is open daily from 7:00 AM to 5:00 PM.",
+      description: "Tungtong Falls is a beautiful waterfall located in San Jose del Monte City, Bulacan, Philippines. It's a popular spot for swimming, picnicking, and enjoying the natural beauty of the area.",
       imageSrc: "images/falls.webp",
       imageAlt: "Image of women in tungtong falls"
     },
@@ -88,7 +88,7 @@ const places = [
 
     card.innerHTML = `
       <h2>${place.name}</h2>
-      <figure><img src="${place.imageSrc}" alt="${place.imageAlt}" width='300' height='200' loading='lazy'></figure>
+      <figure><img src="${place.imageSrc}" alt="${place.imageAlt}" width='300' height='200'></figure>
       <address>${place.address}</address>
       <p>${place.description}</p>
       <button class='btn'>Learn More</button>
