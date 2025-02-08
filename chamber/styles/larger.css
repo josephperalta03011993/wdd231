@@ -71,6 +71,7 @@
         flex-direction: row;
         justify-content: center;
         padding: 1rem 5rem;
+        box-sizing: border-box;
     }
 
     .social-media {
@@ -237,4 +238,84 @@
         font-size: medium;
     }
     /* END JOIN PAGE*/
+
+    /* Discover page */
+    #places-to-visit {
+        display: grid;
+        grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 .";
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    #places-to-visit .cards {
+        border-radius: 1rem;
+        border: 1px solid lightgray;
+        padding: 1rem;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .cards:nth-child(1) {
+        grid-area: card1;
+    }
+    .cards:nth-child(2) {
+        grid-area: card2;
+    }
+    .cards:nth-child(3) {
+        grid-area: card3;
+    }
+    .cards:nth-child(4) {
+        grid-area: card4;
+    }
+    .cards:nth-child(5) {
+        grid-area: card5;
+    }
+    .cards:nth-child(6) {
+        grid-area: card6;
+    }
+    .cards:nth-child(7) {
+        grid-area: card7;
+    }
+    .cards:nth-child(8) {
+        grid-area: card8;
+    }
+
+    #discover-container {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #discover-container h2 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+
+    #discover-container address {
+        color: #000;
+    }
+
+    #discover-container p {
+        margin-top: .5rem;
+        height: 80px;
+        max-height: 200px;
+        color: #2d2d2d;
+    }
+
+    .btn {
+        background-color: var(--primary-color);
+        color: var(--button-color-contrast);
+        padding: .5rem 1rem;
+        border: 1px solid var(--primary-color);
+    }
+    
+    .btn:hover {
+        background-color: var(--button-color-contrast);
+        color: var(--primary-color);
+        padding: .5rem 1rem;
+        border: 1px solid var(--primary-color);
+    }
+    /* End discover page */
 }
