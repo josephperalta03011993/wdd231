@@ -30,3 +30,14 @@
 #places-to-visit {
     margin-top: 1rem;
 }
+
+#places-to-visit {
+    padding: 1rem;
+}
+
+#discover-container p {
+    margin-top: .5rem;
+    height: 60px;
+    max-height: 200px;
+    color: #2d2d2d;
+}
