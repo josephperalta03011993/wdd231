@@ -227,6 +227,10 @@ footer {
     min-height: 100px;
     width: 100%;
     position: relative;
+
+    min-height: 120px; /* Adjust based on your footer's usual height */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer div {
@@ -571,10 +575,7 @@ footer div {
 
 #places-to-visit p {
     margin-top: .5rem;
-}
-
-#places-to-visit img {
-    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 #places-to-visit .btn {
@@ -590,14 +591,26 @@ footer div {
 }
 
 #discover-container h2 {
-    margin-top: 0;
+    margin-top: 1rem;
     color: var(--primary-color);
+}
+
+#discover-container button {
+    margin-bottom: 1rem;
 }
 
 #places-to-visit .cards {
     border-radius: 1rem;
     border: 1px solid lightgray;
-    padding: 1rem .2rem;
     margin: .2rem .5rem;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#places-to-visit img {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+#places-to-visit figure {
+    margin: 0;
 }

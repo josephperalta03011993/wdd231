@@ -38,7 +38,7 @@ const places = [
     },
     {
       name: "Mini Eiffel Tower",
-      address: "Adventure Resort, San Jose Road, Norzagaray, Bulacan",
+      address: "Adventure Resort, San Jose Road, Norzagaray",
       description: "The Eiffel Tower Replica, located within an adventure resort complex, offers a unique and fun experience for visitors of all ages.",
       imageSrc: "images/mini-eiffel-tower.webp",
       imageAlt: "Mini Eiffel Tower"
@@ -88,7 +88,7 @@ const places = [
 
     card.innerHTML = `
       <h2>${place.name}</h2>
-      <figure><img src="${place.imageSrc}" alt="${place.imageAlt}" width='300' height='200'></figure>
+      <figure><img src="${place.imageSrc}" alt="${place.imageAlt}" width='300' height='200' loading='lazy'></figure>
       <address>${place.address}</address>
       <p>${place.description}</p>
       <button class='btn'>Learn More</button>

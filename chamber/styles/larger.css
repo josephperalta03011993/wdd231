@@ -323,5 +323,11 @@
     #places-to-visit {
         margin-top: 1rem;
     }
+
+    #places-to-visit img {
+        width: 300px !important;
+        max-width: 300px;
+        height: 200px;
+    }
     /* End discover page */
 }
