@@ -563,3 +563,41 @@ footer div {
     font-size: medium;
 }
 /* End of Join Page */
+
+#places-to-visit {
+    display: flex;
+    flex-direction: column;
+}
+
+#places-to-visit p {
+    margin-top: .5rem;
+}
+
+#places-to-visit img {
+    max-width: 100%;
+}
+
+#places-to-visit .btn {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--button-color-contrast);
+    padding: .5rem 1rem;
+    border: 1px solid var(--primary-color);
+}
+
+#discover-container address {
+    color: #000;
+}
+
+#discover-container h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+#places-to-visit .cards {
+    border-radius: 1rem;
+    border: 1px solid lightgray;
+    padding: 1rem .2rem;
+    margin: .2rem .5rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
