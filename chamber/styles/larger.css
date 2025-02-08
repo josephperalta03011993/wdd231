@@ -319,5 +319,9 @@
         padding: .5rem 1rem;
         border: 1px solid var(--primary-color);
     }
+
+    #places-to-visit {
+        margin-top: 1rem;
+    }
     /* End discover page */
 }
