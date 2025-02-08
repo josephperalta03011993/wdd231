@@ -9,7 +9,7 @@
     --footer-background: #F0F0F0;
 }
 
-body, html, footer, footer div {
+body, html {
     font-family: "Noto Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -227,9 +227,6 @@ footer {
     min-height: 100px;
     width: 100%;
     position: relative;
-
-    min-height: 120px; /* Adjust based on your footer's usual height */
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -623,6 +620,7 @@ footer div {
 
 #places-to-visit img {
     width: 300px;
+    height: 200px;
     margin-bottom: 1rem;
 }
 
