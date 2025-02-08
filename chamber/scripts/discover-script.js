@@ -32,7 +32,7 @@ const places = [
     {
       name: "Mt. Balagbag",
       address: "Rodriguez Rizal",
-      description: "a beginner-friendly mountain located in Sitio Balagbag, Rodriguez, Rizal. It offers hikers, mountaineers, and mountain bikers a wonderful view of the central business district of Ortigas Center and Makati City skyscrapers.",
+      description: "a beginner-friendly mountain located in Sitio Balagbag, Rodriguez, Rizal. It offers hikers, mountaineers, and mountain bikers a wonderful view of the central business district.",
       imageSrc: "images/mt-balagbag.webp",
       imageAlt: "Mt. Balagbag"
     },
@@ -67,7 +67,7 @@ const places = [
     {
       name: "Hearth Lock Park",
       address: "Paradise 2 San Jose Del Monte, Bulacan",
-      description: "a popular park located in San Jose del Monte City, Bulacan, Philippines. It is known for its beautiful scenery and peaceful atmosphere. The park is a great place to relax and enjoy the outdoors with family and friends.",
+      description: "a popular park known for its beautiful scenery and peaceful atmosphere. The park is a great place to relax and enjoy the outdoors with family and friends.",
       imageSrc: "images/heart-lock.webp",
       imageAlt: "Image of man in lock heart san jose del monte"
     },
