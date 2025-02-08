@@ -304,6 +304,8 @@
         color: #2d2d2d;
     }
 
+    #discover-container img:hover {filter: contrast(50%);}
+
     .btn {
         background-color: var(--primary-color);
         color: var(--button-color-contrast);
