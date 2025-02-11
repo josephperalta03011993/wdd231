@@ -122,21 +122,47 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
     }
-    
-
-    #events {
+    .spotlights {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
         width: 100%;
     }
-
-    #events h2, 
-    #weather-forecast h2, 
-    #current-weather h2 {
-        padding: 1rem;
+    .spotlights section:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease;
+    }
+    .infoDiv img{
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+    }
+    #home-main-container {
+        padding: 0;
+    }
+    #home-container {
+        padding: 1rem 5rem;
+    }
+    #weather-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #events, 
+    #weather-forecast, 
+    #current-weather {
+        height: auto;
     }
 
-    #current-weather-details p {
-        font-size: .9rem;
+    #events:hover, 
+    #weather-forecast:hover, 
+    #current-weather:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease;
     }
+
+    
     /* -------- END HOME PAGE -------- */
     
 }
