@@ -1,0 +1,335 @@
+:root {
+    --primary-color: #164E70;
+    --primary-color-contrast: #FFF;
+    --background-color: #FFFFFD;
+    --background-color-contrast: #000;
+    --button-color: #64301D;
+    --button-color-contrast: #E6EDEF;
+}
+
+@media only screen and (min-width: 1025px) {
+    
+    header {
+        border: none;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: 75px minmax(150px, 200px) auto;
+    }
+    
+    #company-desc {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .navigation, .navigation.open {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation ul li a {
+        font-size: 1rem;
+        color: var(--primary-color-contrast);
+    }
+
+    .navigation a:hover {
+        transition: background-color 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav.navigation {
+        grid-column: 3 / 4;
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    section {
+        width: clamp(300px, 100%, 350px);
+        max-width: 90%;
+    }
+
+    .list section {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        margin-top: 2rem;
+        background-color: var(--footer-background);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem 5rem;
+        box-sizing: border-box;
+    }
+
+    .social-media {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    footer div {
+        flex: 1;
+    }
+
+    /* -------- HOME PAGE -------- */
+    .hero {
+        width: 100%;
+        height: 60vh;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0;
+    }
+    .hero img {
+        width: 1920px;
+        max-width: 1350px;
+        height: 60vh;
+        border-top: 1px solid var(--background-color);
+    }
+    .hero img:hover {
+        border-top: 1px solid var(--background-color);
+    }
+    .cta-button {
+        background-color: var(--background-color-contrast);
+        color: var(--primary-color-contrast);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        bottom: 20px;
+        left: 15%;
+        bottom: 24%;
+        width: 10rem;
+        text-align: center;
+    }
+    .cta-button:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    }
+    .spotlights {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .spotlights section:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease;
+    }
+    .infoDiv img{
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+    }
+    #home-main-container {
+        padding: 0;
+    }
+    #home-container {
+        padding: 1rem 5rem;
+    }
+    #weather-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #events, #weather-forecast, #current-weather {
+        height: auto;
+    }
+    #events:hover, #weather-forecast:hover, #current-weather:hover{
+        transform: translateY(-5px);
+        transition: 0.3s ease;
+    }
+    #events {
+        width: 100%;
+    }
+    #events h2, #weather-forecast h2, #current-weather h2{
+        padding: 1rem;
+    }
+
+    #current-weather-details p{
+        font-size: .9rem;
+    }
+    /* -------- END HOME PAGE -------- */
+
+    /* JOIN PAGE */
+    #join-main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    #join-main-container h1 {
+        grid-row: 1;
+        text-align: center;
+        color: var(--primary-color);
+        padding: 0;
+        margin: 0;
+    }
+
+    #join-main-container #membership-levels {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    #membership-levels div {
+        opacity: 0;
+        transform: translateY(50px); 
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+    }
+
+    #membership-levels div.show {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+
+    #membership-levels div:hover {
+        box-shadow: none;
+    }
+
+    #membership-application-form option {
+        width: 50%;
+        font-size: medium;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+
+    section#membership-levels {
+        padding-top: 0%;
+    }
+
+    #results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    #showRequiredData {
+        text-align: left;
+        padding: 1rem;
+        color: var(--background-color-contrast);
+        border: 2px solid var(--primary-color);
+        border-radius: 1rem;
+        width: 30%;
+    }
+
+    #showRequiredData p {
+        font-size: medium;
+    }
+    /* END JOIN PAGE*/
+
+    /* Discover page */
+    #places-to-visit {
+        display: grid;
+        grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 .";
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    #places-to-visit .cards {
+        border-radius: 1rem;
+        border: 1px solid lightgray;
+        padding: 1rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .cards:nth-child(1) {
+        grid-area: card1;
+    }
+    .cards:nth-child(2) {
+        grid-area: card2;
+    }
+    .cards:nth-child(3) {
+        grid-area: card3;
+    }
+    .cards:nth-child(4) {
+        grid-area: card4;
+    }
+    .cards:nth-child(5) {
+        grid-area: card5;
+    }
+    .cards:nth-child(6) {
+        grid-area: card6;
+    }
+    .cards:nth-child(7) {
+        grid-area: card7;
+    }
+    .cards:nth-child(8) {
+        grid-area: card8;
+    }
+
+    #discover-container {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #discover-container h2 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+
+    #discover-container address {
+        color: #000;
+    }
+
+    #discover-container p {
+        margin-top: .5rem;
+        height: 80px;
+        max-height: 200px;
+        color: #2d2d2d;
+        margin-bottom: 0;
+    }
+
+    #discover-container img:hover {filter: contrast(50%);}
+
+    .btn {
+        background-color: var(--primary-color);
+        color: var(--button-color-contrast);
+        padding: .5rem 1rem;
+        border: 1px solid var(--primary-color);
+    }
+    
+    .btn:hover {
+        background-color: var(--primary-color-contrast) !important;
+        color: var(--primary-color) !important;
+        padding: .5rem 1rem;
+        border: 1px solid var(--primary-color);
+        cursor: pointer;
+    }
+
+    #places-to-visit {
+        margin-top: 1rem;
+    }
+
+    #places-to-visit img {
+        width: 300px !important;
+        max-width: 300px;
+        height: 200px;
+    }
+    /* End discover page */
+}
