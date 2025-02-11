@@ -157,10 +157,11 @@
         padding: 1rem 5rem;
     }
 
-    #weather-section {
+    /* #weather-section {
         display: flex;
+        flex-direction: row;
         gap: 1rem;
         justify-content: center;
-    }
+    } */
     /* -------- END HOME PAGE -------- */
 }
