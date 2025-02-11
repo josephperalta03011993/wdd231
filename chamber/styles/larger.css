@@ -157,33 +157,10 @@
         padding: 1rem 5rem;
     }
 
-    /* remove the #weather-section */
-
-    #events, 
-    #weather-forecast, 
-    #current-weather {
-        height: auto;
-    }
-
-    #events:hover, 
-    #weather-forecast:hover, 
-    #current-weather:hover {
-        transform: translateY(-5px);
-        transition: 0.3s ease;
-    }
-
-    #events {
-        width: 100%;
-    }
-
-    #events h2, 
-    #weather-forecast h2, 
-    #current-weather h2 {
-        padding: 1rem;
-    }
-
-    #current-weather-details p {
-        font-size: .9rem;
+    #weather-section {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
     }
     /* -------- END HOME PAGE -------- */
 }
