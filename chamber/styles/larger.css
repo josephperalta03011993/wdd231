@@ -199,9 +199,10 @@
         margin: 0;
     }
 
-    #join-main-container #membership-levels {
-        margin-top: 1rem;
+    #membership-levels {
         width: 100%;
+        margin-top: 1rem;
+        max-width: 500px;
     }
 
     #membership-levels div {
