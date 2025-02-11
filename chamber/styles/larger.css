@@ -129,7 +129,7 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
     }
-    
+
     .spotlights {
         display: flex;
         flex-direction: row;
@@ -147,5 +147,19 @@
         width: 75px;
         height: 75px;
         object-fit: contain;
+    }
+
+    #home-main-container {
+        padding: 0;
+    }
+
+    #home-container {
+        padding: 1rem 5rem;
+    }
+    
+    #weather-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
     }
 }
