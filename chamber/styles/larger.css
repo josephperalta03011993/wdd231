@@ -8,3 +8,81 @@
     --footer-background: #F0F0F0;
 }
 
+@media only screen and (min-width: 1025px) {
+    
+    header {
+        border: none;
+        font-size: 1.5rem;
+        /* display: grid; */
+        grid-template-columns: 75px minmax(150px, 200px) auto;
+    }
+    
+    #company-desc {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .navigation, 
+    .navigation.open {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation ul li a {
+        font-size: 1rem;
+        color: var(--primary-color-contrast);
+    }
+
+    .navigation a:hover {
+        transition: background-color 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav.navigation {
+        grid-column: 3 / 4;
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    section {
+        width: clamp(300px, 100%, 350px);
+        /* max-width: 90%; */
+    }
+
+    .list section {
+        overflow-x: hidden;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    footer {
+        margin-top: 2rem;
+        background-color: var(--footer-background);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem 5rem;
+        box-sizing: border-box;
+    }
+
+    .social-media {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    footer div {
+        flex: 1;
+    }
+}
