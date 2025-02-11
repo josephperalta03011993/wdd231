@@ -10,81 +10,7 @@
 
 @media only screen and (min-width: 1025px) {
     
-    header {
-        border: none;
-        font-size: 1.5rem;
-        /* display: grid; */
-        grid-template-columns: 75px minmax(150px, 200px) auto;
-    }
     
-    #company-desc {
-        font-size: 16px;
-        padding: 0;
-        margin: 0;
-    }
-
-    #hamburger {
-        display: none;
-    }
-
-    .navigation, 
-    .navigation.open {
-        display: block;
-    }
-
-    .navigation ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .navigation ul li a {
-        font-size: 1rem;
-        color: var(--primary-color-contrast);
-    }
-
-    .navigation a:hover {
-        transition: background-color 0.3s ease;
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    nav.navigation {
-        grid-column: 3 / 4;
-    }
-
-    main {
-        padding: 0 5rem;
-    }
-
-    section {
-        width: clamp(300px, 100%, 350px);
-        /* max-width: 90%; */
-    }
-
-    .list section {
-        overflow-x: hidden;
-        width: 100%;
-        /* max-width: 100%; */
-    }
-
-    footer {
-        margin-top: 2rem;
-        background-color: var(--footer-background);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 1rem 5rem;
-        box-sizing: border-box;
-    }
-
-    .social-media {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-    }
-    
-    footer div {
-        flex: 1;
-    }
 
     /* -------- HOME PAGE -------- */
     .hero {
@@ -180,7 +106,79 @@
     }
     /* -------- END HOME PAGE -------- */
 
- 
+    /* JOIN PAGE */
+    #join-main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    #join-main-container h1 {
+        grid-row: 1;
+        text-align: center;
+        color: var(--primary-color);
+        padding: 0;
+        margin: 0;
+    }
+
+    #join-main-container #membership-levels {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    #membership-levels div {
+        opacity: 0;
+        transform: translateY(50px); 
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+    }
+
+    #membership-levels div.show {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+
+    #membership-levels div:hover {
+        box-shadow: none;
+    }
+
+    #membership-application-form option {
+        width: 50%;
+        font-size: medium;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+
+    section#membership-levels {
+        padding-top: 0%;
+    }
+
+    #results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    #showRequiredData {
+        text-align: left;
+        padding: 1rem;
+        color: var(--background-color-contrast);
+        border: 2px solid var(--primary-color);
+        border-radius: 1rem;
+        width: 30%;
+    }
+
+    #showRequiredData p {
+        font-size: medium;
+    }
+    /* END JOIN PAGE*/
 
     /* Discover page */
     #places-to-visit {
