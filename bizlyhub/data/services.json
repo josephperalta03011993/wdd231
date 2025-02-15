@@ -1,0 +1,122 @@
+[
+    {
+      "image": "images/web-design.webp",
+      "name": "Website Design",
+      "description": "Crafting visually appealing and user-friendly websites that convert visitors into customers.",
+      "features": ["Responsive Design", "UI/UX Design", "E-commerce Integration", "Landing Page Optimization"],
+      "benefits": ["Increased Brand Visibility", "Improved User Engagement", "Higher Conversion Rates", "Mobile-Friendly Experience"],
+      "cta": "Get a Free Quote"
+    },
+    {
+      "image": "images/web-development.webp",
+      "name": "Web Application Development",
+      "description": "Building robust and scalable web applications tailored to your specific business needs.",
+      "features": ["Front-End Development", "Back-End Development", "API Integration", "Database Management"],
+      "benefits": ["Streamlined Business Processes", "Custom Solutions", "Enhanced Productivity", "Scalable Architecture"],
+      "cta": "Contact Us"
+    },
+    {
+      "image": "images/mobile-app-development.webp",
+      "name": "Mobile App Development",
+      "description": "Creating native mobile apps for iOS and Android platforms to reach your target audience.",
+      "features": ["iOS Development", "Android Development", "Cross-Platform Development", "App Store Submission"],
+      "benefits": ["Wider Reach", "Improved Customer Engagement", "Increased Brand Loyalty", "Mobile-First Solutions"],
+      "cta": "Get a Free Consultation"
+    },
+    {
+      "image": "images/seo.webp",
+      "name": "Search Engine Optimization (SEO)",
+      "description": "Improving your website's visibility in search engine results pages to drive organic traffic.",
+      "features": ["Keyword Research", "On-Page Optimization", "Off-Page Optimization", "Technical SEO"],
+      "benefits": ["Increased Website Traffic", "Higher Search Engine Rankings", "Improved Brand Authority", "Targeted Audience Reach"],
+      "cta": "Optimize Your Website"
+    },
+    {
+      "image": "images/content-marketing.webp",
+      "name": "Content Marketing",
+      "description": "Creating and distributing valuable content to attract and engage your target audience.",
+      "features": ["Blog Posts", "Articles", "Infographics", "Social Media Content"],
+      "benefits": ["Increased Brand Awareness", "Improved SEO", "Lead Generation", "Thought Leadership"],
+      "cta": "Start Your Content Strategy"
+    },
+    {
+      "image": "images/social-media-marketing.webp",
+      "name": "Social Media Marketing",
+      "description": "Managing your social media presence to connect with your audience and drive business results.",
+      "features": ["Social Media Management", "Social Media Advertising", "Community Building", "Social Media Analytics"],
+      "benefits": ["Increased Brand Awareness", "Improved Customer Engagement", "Lead Generation", "Targeted Advertising"],
+      "cta": "Boost Your Social Media"
+    },
+    {
+      "image": "images/email-marketing.webp",
+      "name": "Email Marketing",
+      "description": "Building email campaigns to nurture leads and promote your products or services.",
+      "features": ["Email Campaign Design", "Email List Building", "Email Automation", "Email Analytics"],
+      "benefits": ["Direct Communication", "Targeted Messaging", "Lead Nurturing", "Increased Conversions"],
+      "cta": "Start Your Email Campaign"
+    },
+    {
+      "image": "images/branding.webp",
+      "name": "Branding",
+      "description": "Developing a strong brand identity that resonates with your target audience.",
+      "features": ["Brand Strategy", "Logo Design", "Brand Guidelines", "Brand Messaging"],
+      "benefits": ["Stronger Brand Recognition", "Improved Brand Loyalty", "Increased Brand Value", "Clear Brand Communication"],
+      "cta": "Build Your Brand"
+    },
+    {
+      "image": "images/graphic-design.webp",
+      "name": "Graphic Design",
+      "description": "Creating visually appealing designs for your marketing materials and website.",
+      "features": ["Logo Design", "Brochures", "Flyers", "Website Graphics"],
+      "benefits": ["Professional Look and Feel", "Improved Visual Communication", "Enhanced Brand Image", "Effective Marketing Materials"],
+      "cta": "Get Your Design"
+    },
+    {
+      "image": "images/video-production.webp",
+      "name": "Video Production",
+      "description": "Producing high-quality videos to promote your brand and engage your audience.",
+      "features": ["Video Production", "Video Editing", "Animation", "Video Marketing"],
+      "benefits": ["Engaging Content", "Improved Brand Storytelling", "Increased Brand Awareness", "Effective Marketing Tool"],
+      "cta": "Create Your Video"
+    },
+    {
+      "image": "images/consulting.webp",
+      "name": "Business Consulting",
+      "description": "Providing expert advice and guidance to help your business grow and succeed.",
+      "features": ["Strategic Planning", "Business Analysis", "Marketing Consulting", "Financial Consulting"],
+      "benefits": ["Improved Business Performance", "Increased Profitability", "Strategic Growth", "Expert Guidance"],
+      "cta": "Get a Consultation"
+    },
+    {
+      "image": "images/training.webp",
+      "name": "Training and Development",
+      "description": "Offering training programs to enhance the skills and knowledge of your employees.",
+      "features": ["Leadership Training", "Sales Training", "Technical Training", "Custom Training Programs"],
+      "benefits": ["Skilled Workforce", "Improved Employee Performance", "Increased Productivity", "Enhanced Business Capabilities"],
+      "cta": "Train Your Team"
+    },
+    {
+      "image": "images/project-management.webp",
+      "name": "Project Management",
+      "description": "Managing your projects efficiently to ensure they are completed on time and within budget.",
+      "features": ["Project Planning", "Project Execution", "Project Tracking", "Project Reporting"],
+      "benefits": ["On-Time Delivery", "Budget Control", "Improved Project Success", "Efficient Resource Allocation"],
+      "cta": "Manage Your Projects"
+    },
+    {
+      "image": "images/customer-support.webp",
+      "name": "Customer Support",
+      "description": "Providing excellent customer support to ensure customer satisfaction and loyalty.",
+      "features": ["Phone Support", "Email Support", "Live Chat Support", "Knowledge Base"],
+      "benefits": ["Improved Customer Satisfaction", "Increased Customer Loyalty", "Positive Brand Reputation", "Effective Customer Communication"],
+      "cta": "Get Support"
+    },
+    {
+      "image": "images/data-analysis.webp",
+      "name": "Data Analysis",
+      "description": "Analyzing your data to gain insights and make informed business decisions.",
+      "features": ["Data Collection", "Data Processing", "Data Visualization", "Data Reporting"],
+      "benefits": ["Data-Driven Decisions", "Improved Business Insights", "Increased Efficiency", "Strategic Advantage"],
+      "cta": "Analyze Your Data"
+    }
+]

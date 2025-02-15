@@ -1,0 +1,11 @@
+In my home page I used different kinds of layout not just one straight vertical layout
+I also used JSON to fetch the testimonials and display them dynamically using js 
+The layout is responsive to mobile view 
+images used lazy loading 
+edited the images to be optimize and used webp 
+use css and js for animation
+dynamically set the footer year using js 
+use wayfinder
+checked css, html validation 
+check css contrast 
+check lighthouse score and fix needed parts and code 

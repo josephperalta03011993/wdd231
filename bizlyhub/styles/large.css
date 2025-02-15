@@ -259,4 +259,51 @@
         margin-top: 40px;
     }
     /* End footer */
+
+    /***** SERVICES PAGE FROM HERE *****/
+    .services-hero {
+        padding: 80px 0;
+    }
+
+    .services-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .services-hero p {
+        font-size: 1.2rem;
+    }
+
+    .service-categories {
+        flex-direction: row; /* Arrange services horizontally */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center;
+        gap: 30px;
+        padding: 60px;
+    }
+
+    .service-category {
+        flex: 1 0 300px; /* Adjust min-width as needed */
+        text-align: left; /* Align text to the left on larger screens */
+    }
+
+    .service-category h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        text-align: center; /* Center the heading */
+    }
+
+    .call-to-action {
+        padding: 60px;
+    }
+
+    .call-to-action h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .call-to-action button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
 }
