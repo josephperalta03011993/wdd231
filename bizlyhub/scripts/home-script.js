@@ -83,3 +83,9 @@ fetch('data/testimonials.json') // Adjust path if needed
         });
     })
     .catch(error => console.error('Error fetching testimonials:', error));
+
+
+// Dynamic Year in Footer
+const currentYearSpan = document.getElementById('currentYear');
+const currentYear = new Date().getFullYear(); // Get the current year
+currentYearSpan.textContent = currentYear; // Update the HTML
