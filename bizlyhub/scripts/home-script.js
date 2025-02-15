@@ -41,6 +41,28 @@ if (servicesSection) {
     observer.observe(servicesSection);
 }
 
+// Testimonials section scroll animation
+const testimonialSection = document.querySelector('.testimonials');
+
+if (testimonialSection) {
+    const elementsToAnimate = testimonialSection.querySelectorAll('h2, .testimonials, .testimonials-container');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                elementsToAnimate.forEach(element => {
+                    element.classList.add('animate'); // Add 'animate' to individual elements
+                });
+                observer.unobserve(testimonialSection); // Optional: Stop observing
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(testimonialSection);
+}
+
 // Testimonials Fetch and Display
 fetch('data/testimonials.json') // Adjust path if needed
     .then(response => response.json())

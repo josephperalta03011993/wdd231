@@ -263,3 +263,54 @@ ul.menu-links li a {
 }
 
 /* End of testimonials */
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px 20px 0 0; /* Adjust padding for smaller screens */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically by default */
+    align-items: center; /* Center content horizontally */
+    gap: 20px; /* Space between sections */
+}
+
+.footer-section {
+    text-align: center;
+    width: 100%; /* Make each section take full width */
+}
+
+.footer-brand img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-social h3,
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    width: 100%; /* Full width for bottom section */
+}
+/* End footer */

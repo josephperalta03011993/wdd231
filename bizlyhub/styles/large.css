@@ -125,6 +125,20 @@
         transform: translateY(0);
     }
 
+    /* Services Section (Scroll Animation) */
+    .testimonials h2,
+    .testimonials-container {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease, transform 2s ease;
+    }
+
+    .testimonials h2.animate,
+    .testimonials-container.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     /* end animation for sections */
 
     /* Services section */
@@ -223,4 +237,26 @@
     }
 
     /* End testimonials */
+
+    /* Footer */
+    footer {
+        padding: 40px 20px 0 0; /* Adjust for larger screens */
+    }
+
+    .footer-content {
+        flex-direction: row; /* Arrange sections horizontally */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: space-around; /* Distribute space evenly */
+        align-items: center;
+        gap: 20px; /* Adjust spacing between sections */
+    }
+
+    .footer-section {
+        width: auto; /* Reset width for larger screens */
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+    }
+    /* End footer */
 }
