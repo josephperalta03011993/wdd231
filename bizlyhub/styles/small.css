@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #183071;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --secondary-background-color: #f5f5f5;
+    --footer-background-color: #333333;
+    --font-family: 'Roboto', sans-serif;
+    --accent-color: #213269; 
+}
+
+/* Basic Styles for body and html */
+body, html {
+    font-family: var(--font-family);
+    margin: 0;
+    color: var(--text-color); 
+    background-color: var(--background-color); 
+}
+
+/* Header, Navigation, Hamburger */
+
+header {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--accent-color);
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+nav.navigation {
+    grid-column: 1 / -1; /* this makes my active background in nav item full with */
+}
+
+.navigation {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.navigation.open {
+    grid-template-rows: 1fr;
+}
+
+.navigation ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navigation ul li a {
+    color: var(--primary-color);
+}
+
+#hamburger {
+    font-size: 2rem;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    padding: .25rem 2vw;
+}
+
+#hamburger::before {
+    content: "\2630";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
+.menu-links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu-links li a {
+    display: block;
+    padding: .75rem 2vw;
+    text-decoration: none;
+}
+
+/* active menu item */
+.navigation ul li.current-menu-item a {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 700;
+}
+/* End of code for header, menu, navigation */
