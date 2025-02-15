@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizlyhub: Contact Us</title>
+    <meta name="author" content="Joseph D. Peralta">
+    <meta name="description" content="Contact BizlyHub, your software business partner in Bulacan City.  Call us at +639626710210 or send us a message!">
+    <meta property="og:title" content="Bizlyhub: Contact Us">
+    <meta property="og:description" content="Contact BizlyHub, your software business partner in Bulacan City.  Call us at +639626710210 or send us a message!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://josephperalta03011993.github.io/wdd231/bizlyhub/images/og-image.webp">
+    <meta property="og:url" content="https://josephperalta03011993.github.io/wdd231/bizlyhub/contact-us.html">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script defer src="scripts/contact-script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Logo of Bizlyhub" width="100" height="75" loading="eager">
+        <button id="hamburger" aria-label="Menu button"></button>
+        <!-- navigation -->
+        <nav class="navigation">
+            <ul class="menu-links">
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="services.html" title="services">Services</a></li>
+                <li><a href="portfolio.html" title="portfolio">Portfolio</a></li>
+                <li class="current-menu-item"><a href="contact-us.html" title="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+        </section>
+        <div class="container-contact-us">
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="post">  <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section class="contact-info">
+                <h2>Our Contact Information</h2>
+                <div class="contact-details">
+                    <p><strong>Address:</strong> Block 5 Lot 16 Phase 2 Springtown SJDM Bulacan City</p>  
+                    <p><strong>Phone:</strong> +639626710210</p>  
+                    <p><strong>Email:</strong> info@bizlyhub.com</p>
+                </div>
+                <div id="map"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <img src="images/logo.webp" alt="Your Logo" width="200" height="150" loading="lazy">
+                <p>Your Software Business Partner</p>
+            </div>
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61567562983142" target="_blank"><img src="images/facebook-icon.webp" alt="Facebook" height="30" width="30" loading="lazy"></a>
+                    <a href="https://github.com/josephperalta03011993" target="_blank"><img src="images/github-icon.webp" alt="Github" height="30" width="30" loading="lazy"></a>
+                    <a href="https://www.linkedin.com/in/jdperalta/" target="_blank"><img src="images/linkedin-icon.webp" alt="LinkedIn" height="30" width="30" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Call Us</h3>
+                <p>+639626710210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Copyright BizlyHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

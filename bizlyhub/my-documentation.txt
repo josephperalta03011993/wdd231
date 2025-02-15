@@ -10,3 +10,5 @@ checked css, html validation
 check css contrast 
 check lighthouse score and fix needed parts and code 
 created 15 services dynamically using JSON and JS
+added a map in the contact page for the company location using API OpenStreetMap 
+uses javascript library leaflet to interact with the map

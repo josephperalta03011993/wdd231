@@ -317,19 +317,19 @@ footer {
 
 /***** SERVICES PAGE FROM HERE *****/
 /* Services Hero Section */
-.services-hero {
+.services-hero, .contact-hero {
     background-color: var(--primary-color); /* Example background color */
     color: var(--background-color);
     padding: 40px 20px; /* Adjust padding for smaller screens */
     text-align: center;
 }
 
-.services-hero h1 {
+.services-hero h1, .contact-hero h1 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.services-hero p {
+.services-hero p, .contact-hero p {
     font-size: 1rem;
 }
 
@@ -407,4 +407,58 @@ footer {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+/***** CONTACT PAGE *****/
+.contact-hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    /* Form takes full width on mobile */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    /* Stacking vertically on mobile */
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+.container-contact-us {
+    padding: 2rem;
 }
