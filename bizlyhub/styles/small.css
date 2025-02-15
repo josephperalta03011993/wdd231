@@ -158,13 +158,61 @@ ul.menu-links li a {
     margin-bottom: 10px;
 }
 
-.services-image {
+/*.services-image {*/
     /* Image styles for smaller screens (if needed) */
     /* You might want to display a smaller version of the image here */
-}
+/*}*/
 
 .services-image img {
     width: 100%;
     height: auto;
 }
 /* End of services section */
+
+/* Email Signup Section */
+.email-signup {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+    text-align: center;
+    background-color: var(--secondary-background-color);
+}
+
+.email-signup-content {
+    max-width: 90%; /* Occupy most of the width on smaller screens */
+    margin: 0 auto;
+}
+
+.email-signup h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.email-signup p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.email-signup form {
+    display: flex;
+    flex-direction: column; /* Stack input and button */
+    align-items: center;
+}
+
+.email-signup input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.email-signup button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width on smaller screens */
+}
+/* End email sign up */

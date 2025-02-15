@@ -159,4 +159,39 @@
         font-size: 1.2rem; /* Adjust as needed */
     }
     /* End of services section */
+
+    /* Email sign up */
+    .email-signup {
+        padding: 60px; 
+    }
+
+    .email-signup-content {
+        max-width: 600px; 
+    }
+
+    .email-signup h2 {
+        font-size: 2rem; 
+        margin-bottom: 20px;
+    }
+
+    .email-signup p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .email-signup form {
+        flex-direction: row; /* Input and button side-by-side */
+        justify-content: center; /* Center the form elements */
+    }
+
+    .email-signup input[type="email"] {
+        width: 250px; 
+        margin-right: 10px;
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    .email-signup button {
+        width: auto; /* Auto width for the button */
+    }
+    /* End email sign up */
 }
