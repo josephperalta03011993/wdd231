@@ -462,3 +462,27 @@ button {
 .container-contact-us {
     padding: 2rem;
 }
+
+.map-overlay-text { /* Class for your text elements over the map */
+    color: white; /* Your text color */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Example black outline */
+    /* Or use a JavaScript library for more control */
+}
+
+#map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-popup-pane > div > a > span {
+    color: #000;
+}
+
+#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div > a:nth-child(1),
+#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div > a:nth-child(3) {
+    color: var(--primary-color);
+}
+
+/* Contact submit form */
+#results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
