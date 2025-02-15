@@ -6,64 +6,67 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
 });
 
-// Function to handle animations
-function handleIntersection(entries, observer) {
+// Create a single observer with better performance options
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
-          const elementsToAnimate = entry.target.querySelectorAll('h1, p, img, h2, ul, a');
-          elementsToAnimate.forEach((element, index) => {
-              setTimeout(() => {
-                  element.classList.add('animate');
-              }, index * 100);
+          requestAnimationFrame(() => {
+              const elementsToAnimate = entry.target.querySelectorAll('[data-animate]');
+              elementsToAnimate.forEach((element, index) => {
+                  // Reduced delay and using requestAnimationFrame
+                  setTimeout(() => {
+                      element.classList.add('animate');
+                  }, index * 50); // Reduced from 100ms to 50ms
+              });
           });
           observer.unobserve(entry.target);
       }
   });
-}
-
-// Create a single observer that can be reused
-const observer = new IntersectionObserver(handleIntersection, {
-  threshold: 0.2,
+}, {
+  threshold: 0.1, // Reduced threshold for earlier loading
   rootMargin: '50px'
 });
 
 // Observe the services-hero section
 const servicesHero = document.querySelector('.services-hero');
 if (servicesHero) {
+  // Add data-animate attributes to elements we want to animate
+  const heroElements = servicesHero.querySelectorAll('h1, p');
+  heroElements.forEach(el => el.setAttribute('data-animate', ''));
   observer.observe(servicesHero);
 }
 
-// Load json data for service categories
+// Load json data
 fetch('data/services.json')
   .then(response => response.json())
   .then(services => {
       const container = document.querySelector('.service-categories');
+      const fragment = document.createDocumentFragment(); // Use document fragment
 
       services.forEach(service => {
           const serviceDiv = document.createElement('div');
           serviceDiv.classList.add('service-category');
 
-          let innerHTML = `
-              <img src="${service.image}" alt="${service.name}" width="300" height="200" loading="lazy">
-              <h2>${service.name}</h2>
-              <p>${service.description}</p>
-              <ul>
+          serviceDiv.innerHTML = `
+              <img src="${service.image}" alt="${service.name}" width="300" height="200" loading="lazy" data-animate>
+              <h2 data-animate>${service.name}</h2>
+              <p data-animate>${service.description}</p>
+              <ul data-animate>
                   ${service.features.map(feature => `<li>${feature}</li>`).join('')}
               </ul>
-              <ul>
+              <ul data-animate>
                   ${service.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
               </ul>
-              <a href="https://www.facebook.com/profile.php?id=61567562983142" target="_blank">
+              <a href="https://www.facebook.com/profile.php?id=61567562983142" target="_blank" data-animate>
                   <button>${service.cta}</button>
               </a>
           `;
 
-          serviceDiv.innerHTML = innerHTML;
-          container.appendChild(serviceDiv);
-          
-          // Observe each service category
+          fragment.appendChild(serviceDiv);
           observer.observe(serviceDiv);
       });
+
+      container.appendChild(fragment); // Single DOM update
   });
 
 // Dynamic Year in Footer
