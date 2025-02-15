@@ -132,3 +132,39 @@ ul.menu-links li a {
     box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 /* End hero section */
+
+/* Services Section (Mobile First) */
+.services {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center content on smaller screens */
+}
+
+.services-content {
+    margin-bottom: 30px; /* Space between content and image */
+}
+
+.services h2 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 15px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 1rem; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.services-image {
+    /* Image styles for smaller screens (if needed) */
+    /* You might want to display a smaller version of the image here */
+}
+
+.services-image img {
+    width: 100%;
+    height: auto;
+}
+/* End of services section */

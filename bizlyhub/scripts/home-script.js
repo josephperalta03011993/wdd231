@@ -9,4 +9,5 @@ hamburger.addEventListener('click', () => {
 // Hero section animation
 window.addEventListener('load', () => {
     document.querySelector('.hero').classList.add('loaded');
+    document.querySelector('.services').classList.add('loaded');
 });
