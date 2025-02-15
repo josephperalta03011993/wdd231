@@ -40,3 +40,24 @@ if (servicesSection) {
 
     observer.observe(servicesSection);
 }
+
+// Testimonials Fetch and Display
+fetch('data/testimonials.json') // Adjust path if needed
+    .then(response => response.json())
+    .then(testimonials => {
+        const container = document.querySelector('.testimonials-container');
+
+        testimonials.forEach(testimonial => {
+            const testimonialDiv = document.createElement('div');
+            testimonialDiv.classList.add('testimonial');
+
+            testimonialDiv.innerHTML = `
+                <img src="${testimonial.image}" alt="${testimonial.name}'s testimonial image'" width="80" height="80">
+                <p>"${testimonial.testimonial}"</p>
+                <h3>${testimonial.name}</h3>
+            `;
+
+            container.appendChild(testimonialDiv);
+        });
+    })
+    .catch(error => console.error('Error fetching testimonials:', error));

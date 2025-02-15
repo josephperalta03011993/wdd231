@@ -194,4 +194,33 @@
         width: auto; /* Auto width for the button */
     }
     /* End email sign up */
+
+    /* Testimonials Section */
+    .testimonials {
+        padding: 60px;
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-container {
+        flex-direction: row; /* Arrange testimonials side-by-side */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .testimonial {
+        flex: 1 0 300px; /* Adjust min-width as needed */
+        width: auto; /* Reset width */
+    }
+
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* End testimonials */
 }

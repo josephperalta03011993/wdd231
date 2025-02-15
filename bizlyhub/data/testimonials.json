@@ -1,0 +1,17 @@
+[
+    {
+      "image": "images/testimonial1.webp",
+      "name": "Sarah Dela Cruz",
+      "testimonial": "Bizlyhub has transformed our online presence! Their design is stunning, and their development expertise is top-notch. Highly recommended!"
+    },
+    {
+      "image": "images/testimonial2.webp",
+      "name": "Tiffany Smith",
+      "testimonial": "We're thrilled with the results! Bizlyhub's team is professional, responsive, and truly understands our business needs."
+    },
+    {
+      "image": "images/testimonial3.webp",
+      "name": "Peter James Santos",
+      "testimonial": "From concept to launch, Bizlyhub exceeded our expectations. Their attention to detail and commitment to quality is remarkable."
+    }
+  ]
