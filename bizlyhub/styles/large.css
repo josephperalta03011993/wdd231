@@ -69,43 +69,63 @@
     }
     /* End hero section */
 
-    /* Animation for the hero section */
-    .hero-content h1 {
-        animation: fadeInUp 0.5s ease forwards;
+    /* Animation for sections */
+    /* Common Animation Styles */
+    .fade-in {
+        opacity: 0;
+        transition: opacity 0.5s ease;
     }
-    
-    .hero-content p {
-        animation: fadeInUp 1.5s ease forwards;
+
+    .fade-in.animate,
+    .fade-in.loaded {
+        opacity: 1;
     }
-    
-    .hero-content .cta-button {
-        animation: fadeInUp 2.5s ease forwards;
+
+    .slide-up {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease, transform 3s ease;
     }
-    
-    .hero-image img {
-        animation: fadeIn 1s ease forwards; /* Fades in */
+
+    .slide-up.animate,
+    .slide-up.loaded {
+        opacity: 1;
+        transform: translateY(0);
     }
-    
+
+    /* Hero Section (Load Animation) */
+    .hero.loaded h1 { animation: fadeInUp 0.5s ease forwards; }
+    .hero.loaded p { animation: fadeInUp 1.5s ease forwards; }
+    .hero.loaded .cta-button { animation: fadeInUp 2.5s ease forwards; }
+    .hero.loaded img { animation: fadeIn 2.5s ease forwards; }
+
     @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(60px); }
+        to { opacity: 1; transform: translateY(0); }
     }
-    
+
     @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
-    /* end animation for hero section */
+
+    /* Services Section (Scroll Animation) */
+    .services h2,
+    .services ul,
+    .services img {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease, transform 2s ease;
+    }
+
+    .services h2.animate,
+    .services ul.animate,
+    .services img.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* end animation for sections */
 
     /* Services section */
     .services {
