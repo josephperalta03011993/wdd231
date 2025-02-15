@@ -139,6 +139,41 @@
         transform: translateY(0);
     }
 
+    /* Services Section - Service Page */
+    .services-hero h1,
+    .services-hero p {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease, transform 2s ease;
+        will-change: opacity, transform; /* Optimize performance */
+    }
+
+    .services-hero h1.animate,
+    .services-hero p.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .service-category img,
+    .service-category h2,
+    .service-category p,
+    .service-category ul,
+    .service-category a {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.5s ease, transform 1s ease;
+        will-change: opacity, transform;
+    }
+
+    .service-category img.animate,
+    .service-category h2.animate,
+    .service-category p.animate,
+    .service-category ul.animate,
+    .service-category a.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     /* end animation for sections */
 
     /* Services section */

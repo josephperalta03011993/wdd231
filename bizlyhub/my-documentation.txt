@@ -9,3 +9,4 @@ use wayfinder
 checked css, html validation 
 check css contrast 
 check lighthouse score and fix needed parts and code 
+created 15 services dynamically using JSON and JS
