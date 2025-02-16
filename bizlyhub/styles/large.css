@@ -344,10 +344,10 @@
 
     .call-to-action h2 {
         font-size: 2rem;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
-    .call-to-action button {
+    .call-to-action a {
         padding: 15px 30px;
         font-size: 1.2rem;
     }

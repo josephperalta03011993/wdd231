@@ -393,10 +393,10 @@ footer {
 
 .call-to-action h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
-.call-to-action button {
+.call-to-action a {
     background-color: white;
     color: var(--primary-color);
     padding: 12px 25px;
@@ -404,6 +404,7 @@ footer {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /***** CONTACT PAGE *****/
