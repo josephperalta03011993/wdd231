@@ -44,9 +44,10 @@
 
     .hero-content p {
         font-size: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .hero-content button {
+    .hero-content a {
         border: none;
         background-color: var(--background-color);
         color: var(--primary-color);
@@ -54,6 +55,7 @@
         padding: 1rem;
         cursor: pointer;
         box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        text-decoration: none;
     }
 
     .hero-image {
