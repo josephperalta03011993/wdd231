@@ -133,7 +133,7 @@ ul.menu-links li a {
 }
 /* End hero section */
 
-/* Services Section (Mobile First) */
+/* Services Section */
 .services {
     padding: 50px 20px; /* Adjust padding for smaller screens */
     text-align: center; /* Center content on smaller screens */
@@ -144,7 +144,7 @@ ul.menu-links li a {
 }
 
 .services h2 {
-    font-size: 2rem; /* Adjust as needed */
+    font-size: 2rem; 
     margin-bottom: 15px;
 }
 
@@ -154,14 +154,9 @@ ul.menu-links li a {
 }
 
 .services li {
-    font-size: 1rem; /* Adjust as needed */
+    font-size: 1rem; 
     margin-bottom: 10px;
 }
-
-/*.services-image {*/
-    /* Image styles for smaller screens (if needed) */
-    /* You might want to display a smaller version of the image here */
-/*}*/
 
 .services-image img {
     width: 100%;
@@ -415,10 +410,6 @@ footer {
     margin-bottom: 20px;
 }
 
-.contact-form {
-    /* Form takes full width on mobile */
-}
-
 .form-group {
     margin-bottom: 15px;
 }
@@ -444,10 +435,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.contact-info {
-    /* Stacking vertically on mobile */
 }
 
 .contact-details {
