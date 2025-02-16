@@ -38,14 +38,17 @@ const displayPortpolio = (projects) => {
         let title = document.createElement('h2');
         let category = document.createElement('p');
         let description = document.createElement('p');
-        let technologies = document.createElement('ul')
+        let technologies = document.createElement('ul');
+        let learnMore = document.createElement('button');
         let demoLink = document.createElement('a');
+        const dialogBox = document.querySelector('#dialogBox');
 
         // Build 
         title.textContent = `${project.title}`;
         category.textContent = `${project.category}`;
         description.textContent = `${project.description}`;
-
+        learnMore.textContent = 'Learn More';
+        
         // link
         demoLink.href = `${project.demoLink}`;
         demoLink.textContent = `${project.demoLink}`;
@@ -55,10 +58,39 @@ const displayPortpolio = (projects) => {
         card.appendChild(title);
         card.appendChild(category);
         card.appendChild(description);
-        card.appendChild(demoLink);
+        card.appendChild(learnMore);
         
         cards.appendChild(card);
+
+        learnMore.addEventListener('click', () => {
+            dialogBox.innerHTML = `
+                <div id="dialogTitle">
+                    <h3>${project.title}</h3>
+                </div>
+                <p>Visit Demo Link</p>
+                <a href='${project.demoLink}' target='_blank'>${demoLink}</a>
+                <br><br>
+                <button id="closeDialog" aria-label="Close dialog">Close</button>
+            `;
+            dialogBox.showModal();
+        
+            closeDialog();
+        });
     });
 }
 
 getPortfolioData();
+
+
+function closeDialog() {
+    const closeDialog = dialogBox.querySelector('#closeDialog');
+    const btnX = dialogBox.querySelector('#btnX');
+
+    closeDialog.addEventListener('click', () => {
+        dialogBox.close();
+    });
+
+    btnX.addEventListener('click', () => {
+        dialogBox.close();
+    });
+}
