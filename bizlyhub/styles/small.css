@@ -475,7 +475,7 @@ button {
 /* MAP COLOR CONTRAST ISSUE */
 .map-overlay {
     background-color: var(--primary-color);
-    padding: 5px; /* Adjust padding */
+    padding: .2rem 1.5rem; /* Adjust padding */
 }
 
 .map-overlay-text {
