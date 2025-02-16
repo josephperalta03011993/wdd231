@@ -89,3 +89,25 @@ fetch('data/testimonials.json') // Adjust path if needed
 const currentYearSpan = document.getElementById('currentYear');
 const currentYear = new Date().getFullYear(); // Get the current year
 currentYearSpan.textContent = currentYear; // Update the HTML
+
+const form = document.getElementById('email-signup-form'); // Get the form element
+const btnEmailSignUp = document.getElementById('btn-email-signup');
+const emailInput = document.getElementById('email-input');
+
+if (form && btnEmailSignUp && emailInput) {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission (page reload)
+
+    const email = emailInput.value;
+
+    if (email) {
+      localStorage.setItem('userEmail', email);
+      alert('Email saved successfully!');
+      emailInput.value = ''; // Clear the input field
+    } else {
+      alert('Please enter your email address.'); // The 'required' attribute should already handle this, but it's good to have a backup
+    }
+  });
+} else {
+  console.error("Form or button element not found!");
+}
