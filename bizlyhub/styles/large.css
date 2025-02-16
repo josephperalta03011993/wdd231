@@ -371,11 +371,17 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 2% 5%;
+        min-height: 570px;
+        container-type: inline-size;
     }
 
     .portfolio-list section {
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         padding: 1rem;
+        min-height: 240px;
+        transition: height 0.3s ease;
+        overflow: hidden;
     }
     /* END PORTFOLIO */
+
 }

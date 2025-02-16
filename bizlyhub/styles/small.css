@@ -484,3 +484,12 @@ button {
 .map-overlay-text {
     color: var(--background-color)
 }
+
+.portfolio-list {
+    padding: 1.5rem;
+}
+
+.portfolio-list section {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}

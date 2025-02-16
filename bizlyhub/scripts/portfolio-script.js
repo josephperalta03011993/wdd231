@@ -42,6 +42,7 @@ const displayPortpolio = (projects) => {
         let learnMore = document.createElement('button');
         let demoLink = document.createElement('a');
         const dialogBox = document.querySelector('#dialogBox');
+        let br = document.createElement('br');
 
         // Build 
         title.textContent = `${project.title}`;
@@ -58,6 +59,7 @@ const displayPortpolio = (projects) => {
         card.appendChild(title);
         card.appendChild(category);
         card.appendChild(description);
+        card.appendChild(br);
         card.appendChild(learnMore);
         
         cards.appendChild(card);
