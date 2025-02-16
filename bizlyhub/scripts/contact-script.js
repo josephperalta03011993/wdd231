@@ -34,7 +34,7 @@ function initMap() {
     // }).addTo(map);
 
     L.marker([14.788934, 121.048117]).addTo(map)
-        .bindPopup('BizlyHub')
+        //.bindPopup('BizlyHub')
         .openPopup();
 }
 

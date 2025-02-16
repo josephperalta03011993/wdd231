@@ -463,11 +463,6 @@ button {
     color: #000;
 }
 
-#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div > a:nth-child(1),
-#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div > a:nth-child(3) {
-    color: var(--primary-color);
-}
-
 /* Contact submit form */
 #results {
     display: flex;
@@ -475,4 +470,14 @@ button {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
+}
+
+/* MAP COLOR CONTRAST ISSUE */
+.map-overlay {
+    background-color: var(--primary-color);
+    padding: 5px; /* Adjust padding */
+}
+
+.map-overlay-text {
+    color: var(--background-color)
 }
