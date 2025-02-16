@@ -1,0 +1,38 @@
+[
+  {
+    "title": "BizlyHub Website",
+    "category": "Web Development",
+    "image": "images/bizlyhub-website.jpg", 
+    "description": "The official website for BizlyHub, a software solutions company. The site showcases the company's services, portfolio, and contact information. Technologies used include HTML, CSS, JavaScript.",
+    "technologies": ["HTML", "CSS", "JavaScript"], 
+    "demoLink": "https://www.bizlyhub.com", 
+    "githubLink": null 
+  },
+  {
+    "title": "BizlyHub CRM System",
+    "category": "Web Application",
+    "image": "images/bizlyhub-crm.png", 
+    "description": "A Customer Relationship Management (CRM) system developed for BizlyHub. This system helps manage customer interactions, track leads, and automate sales processes.",
+    "technologies": ["React", "Node.js", "Express", "MongoDB"], 
+    "demoLink": null, 
+    "githubLink": null 
+  },
+    {
+    "title": "Mobile App for BizlyHub",
+    "category": "Mobile App Development",
+    "image": "images/bizlyhub-mobile-app.jpg", 
+    "description": "A mobile application developed for BizlyHub. This app allows users to access payslip on their mobile devices.",
+    "technologies": ["Java", "Kotlin", "Android SDK"], 
+    "demoLink": null, 
+    "githubLink": null 
+  },
+  {
+    "title": "BizlyHub Design System",
+    "category": "UI/UX Design",
+    "image": "images/bizlyhub-design-system.svg", 
+    "description": "A design system created for BizlyHub to ensure consistency and efficiency in UI/UX design across all platforms.  Tools used include Figma, Adobe XD, or Sketch.",
+    "technologies": ["Figma", "Adobe XD", "Sketch"], 
+    "demoLink": null, 
+    "githubLink": null
+  }
+]

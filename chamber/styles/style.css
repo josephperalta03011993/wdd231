@@ -222,7 +222,7 @@ p {
 }
 
 .contact-info, .social-media, .project-info {
-    min-height: 40px; /* Set minimum height for each section */
+    min-height: 40px; /* Set minimum height for each section */ 
 }
 
 .social-media img {

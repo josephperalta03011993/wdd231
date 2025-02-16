@@ -181,9 +181,16 @@
         transform: translateY(0);
     }
 
+    /* Contact Us Animation */
     .contact-hero h1 { animation: fadeInUp 1s ease forwards; }
     .contact-hero p { animation: fadeInUp 2s ease forwards; }
     .contact-form h2 { animation: fadeInRight 1s ease-in forwards}
+
+    /* Portfolio Animation */
+    .portfolio-hero h1 { animation: fadeInUp 1s ease forwards; }
+    .portfolio-hero p { animation: fadeInUp 2s ease forwards; }
+    .portfolio-list { animation: fadeInUp 2s ease forwards; }
+
     /* end animation for sections */
 
     /* Services section */
@@ -306,16 +313,16 @@
     /* End footer */
 
     /***** SERVICES PAGE FROM HERE *****/
-    .services-hero, .contact-hero {
+    .services-hero, .contact-hero, .portfolio-hero {
         padding: 80px 0;
     }
 
-    .services-hero h1, .contact-hero h1 {
+    .services-hero h1, .contact-hero h1, .portfolio-hero h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
 
-    .services-hero p, .contact-hero p {
+    .services-hero p, .contact-hero p, .portfolio-hero p {
         font-size: 1.2rem;
     }
 
@@ -357,4 +364,18 @@
         padding: 2rem 20rem;
     }
     /* END CONTACT US */
+
+    /* PORTFOLIO */
+    .portfolio-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 2% 5%;
+    }
+
+    .portfolio-list section {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        padding: 1rem;
+    }
+    /* END PORTFOLIO */
 }

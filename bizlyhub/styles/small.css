@@ -314,19 +314,19 @@ footer {
 
 /***** SERVICES PAGE FROM HERE *****/
 /* Services Hero Section */
-.services-hero, .contact-hero {
+.services-hero, .contact-hero, .portfolio-hero {
     background-color: var(--primary-color); /* Example background color */
     color: var(--background-color);
     padding: 40px 20px; /* Adjust padding for smaller screens */
     text-align: center;
 }
 
-.services-hero h1, .contact-hero h1 {
+.services-hero h1, .contact-hero h1, .portfolio-hero h1 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.services-hero p, .contact-hero p {
+.services-hero p, .contact-hero p, .portfolio-hero p {
     font-size: 1rem;
 }
 
@@ -408,6 +408,9 @@ footer {
 }
 
 /***** CONTACT PAGE *****/
+.contact-info {
+    margin-top: 3rem;
+}
 .contact-hero {
     text-align: center;
     margin-bottom: 20px;
