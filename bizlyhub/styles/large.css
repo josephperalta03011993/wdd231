@@ -184,7 +184,7 @@
     /* Contact Us Animation */
     .contact-hero h1 { animation: fadeInUp 1s ease forwards; }
     .contact-hero p { animation: fadeInUp 2s ease forwards; }
-    .contact-form h2 { animation: fadeInRight 1s ease-in forwards}
+    .contact-form h2 { animation: fadeInRight 1s ease-in forwards }
 
     /* Portfolio Animation */
     .portfolio-hero h1 { animation: fadeInUp 1s ease forwards; }

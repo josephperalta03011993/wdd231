@@ -17,10 +17,14 @@ const cards = document.querySelector("#cards");
 
 // Use async and await to fetch JSON data
 async function getPortfolioData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    
-    displayPortpolio(data);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        displayPortpolio(data);
+    } catch(error) {
+        console.error("Error fetching or displaying portfolio data:", error);
+    }
 }
 
 const displayPortpolio = (projects) => {
@@ -35,16 +39,23 @@ const displayPortpolio = (projects) => {
         let category = document.createElement('p');
         let description = document.createElement('p');
         let technologies = document.createElement('ul')
+        let demoLink = document.createElement('a');
 
         // Build 
         title.textContent = `${project.title}`;
         category.textContent = `${project.category}`;
         description.textContent = `${project.description}`;
+
+        // link
+        demoLink.href = `${project.demoLink}`;
+        demoLink.textContent = `${project.demoLink}`;
+        demoLink.target = "_blank";
         
         // Append the section(card) with the created elements
         card.appendChild(title);
         card.appendChild(category);
         card.appendChild(description);
+        card.appendChild(demoLink);
         
         cards.appendChild(card);
     });

@@ -14,7 +14,7 @@
     "image": "images/bizlyhub-crm.png", 
     "description": "A Customer Relationship Management (CRM) system developed for BizlyHub. This system helps manage customer interactions, track leads, and automate sales processes.",
     "technologies": ["React", "Node.js", "Express", "MongoDB"], 
-    "demoLink": null, 
+    "demoLink": "https://payroll.bizlyhub.com", 
     "githubLink": null 
   },
     {
@@ -23,7 +23,7 @@
     "image": "images/bizlyhub-mobile-app.jpg", 
     "description": "A mobile application developed for BizlyHub. This app allows users to access payslip on their mobile devices.",
     "technologies": ["Java", "Kotlin", "Android SDK"], 
-    "demoLink": null, 
+    "demoLink": "https://bizlist.bizlyhub.com/login", 
     "githubLink": null 
   },
   {
@@ -32,7 +32,7 @@
     "image": "images/bizlyhub-design-system.svg", 
     "description": "A design system created for BizlyHub to ensure consistency and efficiency in UI/UX design across all platforms.  Tools used include Figma, Adobe XD, or Sketch.",
     "technologies": ["Figma", "Adobe XD", "Sketch"], 
-    "demoLink": null, 
+    "demoLink": "https://requestkey.bizlyhub.com/", 
     "githubLink": null
   }
 ]
