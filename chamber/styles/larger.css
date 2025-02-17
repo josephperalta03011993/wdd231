@@ -349,4 +349,16 @@
         max-width: 300px;
         height: 200px;
     }
+
+    .loading, .error {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .error {
+        color: #530a11;
+        background-color: #ffe7e9;
+        border: 1px solid #f5c6cb;
+        border-radius: 4px;
+    }
 }
