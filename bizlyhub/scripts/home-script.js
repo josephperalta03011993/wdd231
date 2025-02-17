@@ -111,3 +111,18 @@ if (form && btnEmailSignUp && emailInput) {
 } else {
   console.error("Form or button element not found!");
 }
+
+// Welcome the user
+window.addEventListener('DOMContentLoaded', () => { // Wait for the DOM to be fully loaded
+    const storedEmail = localStorage.getItem('userEmail');
+  
+    if (storedEmail) {
+      const welcomeMessage = document.getElementById('welcome-message'); // Element to display the message
+      if (welcomeMessage) {
+          welcomeMessage.textContent = `Welcome back, ${storedEmail}!`;
+      }
+  
+      // Or if you want to use the stored email for some other purpose:
+      console.log("Stored email:", storedEmail);
+    }
+  });
